@@ -1,8 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:1e293b&height=200&section=header&text=Shoaib%20Arshad&fontSize=48&fontColor=00ff9c&fontAlignY=38&desc=Web%20Security%20Researcher%20%C2%B7%20Bug%20Bounty%20Hunter%20%C2%B7%20Tool%20Builder&descSize=18&descAlignY=58&animation=fadeIn" />
+<img width="100%" src="https://raw.githubusercontent.com/youwannahackme/youwannahackme/main/assets/banner.svg" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=800&color=00FF9C&center=true&vCenter=true&width=600&lines=recon+%E2%86%92+exploit+%E2%86%92+report;building+offensive-security+tooling+in+Go;grinding+PortSwigger+%2B+HTB+daily;currently+chasing+CVEs+for+fun" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=800&color=00FF9C&center=true&vCenter=true&width=600&lines=building+offensive-security+tooling+in+Go;grinding+PortSwigger+%2B+HTB+daily;currently+chasing+CVEs+for+fun" />
 
 <br>
 
@@ -75,6 +75,28 @@ class SecurityResearcher:
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=youwannahackme&theme=dark&hide_border=true&background=0d1117" />
 
 <img src="https://github-profile-trophy.vercel.app/?username=youwannahackme&theme=darkhub&no-frame=true&row=1&margin-w=15&column=7" />
+
+</div>
+
+<br>
+
+## Deep Metrics
+
+<div align="center">
+
+<img width="100%" src="https://raw.githubusercontent.com/youwannahackme/youwannahackme/main/metrics.svg" />
+
+</div>
+
+> Self-hosted via GitHub Action (`metrics.yml`) — isometric commit calendar, language-by-time-of-day breakdown, and repo velocity. Needs a one-time token setup, covered below.
+
+<br>
+
+## Activity Graph
+
+<div align="center">
+
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=youwannahackme&theme=react-dark&hide_border=true&bg_color=0d1117&color=00ff9c&line=00ff9c&point=e6edf3" />
 
 </div>
 
