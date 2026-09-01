@@ -9,7 +9,7 @@
 
 <!-- DYNAMIC TYPING TERMINAL -->
 <a href="https://github.com/youwannahackme">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2600&pause=800&color=00FF9C&center=true&vCenter=true&multiline=false&width=780&height=45&lines=Building+Offensive-Security+Tooling+in+Go+%26+Python;Weaponized+Recon+%26+Automated+OSINT+Engines;Grinding+PortSwigger+Web+Security+Academy+%2B+HackTheBox;Hunting+CVEs+%26+High-Impact+Bounties;Recon+first.+Exploit+second.+Report+always." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2600&pause=800&color=00FF9C&center=true&vCenter=true&multiline=false&width=750&height=40&lines=Building+Offensive-Security+Tooling+in+Go+%26+Python;Weaponized+Recon+%26+Automated+OSINT+Engines;Grinding+PortSwigger+Web+Security+Academy+%2B+HackTheBox;Hunting+CVEs+%26+Vulnerabilities+for+Fun;Recon+first.+Exploit+second.+Report+always." alt="Typing SVG" />
 </a>
 
 <br>
@@ -60,14 +60,7 @@ Cybersecurity researcher and toolsmith engineering high-speed offensive-security
   <img width="100%" src="./assets/terminal.svg" alt="Animated Security Terminal" />
 </div>
 
-<br>
-
-<!-- LASER DIVIDER -->
-<p align="center">
-  <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
-</p>
-
-<br>
+<br><br>
 
 ## ⚡ Technical Arsenal &amp; Weaponized Stack
 
@@ -96,14 +89,7 @@ Cybersecurity researcher and toolsmith engineering high-speed offensive-security
 
 </div>
 
-<br>
-
-<!-- LASER DIVIDER -->
-<p align="center">
-  <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
-</p>
-
-<br>
+<br><br>
 
 ## 🛠️ Weaponized Engines &amp; Featured Projects
 
@@ -125,58 +111,27 @@ Cybersecurity researcher and toolsmith engineering high-speed offensive-security
 | 🛡️ **[CVE Hunter Pro](https://github.com/youwannahackme/CVE-Hunter-Extention)** | `JavaScript` | Chrome extension for single-lookup CVE triage — CVSS scoring, EPSS exploit probability, CISA KEV status, and GitHub PoC discovery in one popup. | ![Active](https://img.shields.io/badge/STATUS-EXTENSION-F59E0B?style=flat-square) |
 | 🔍 **[ScriptSentry](https://github.com/youwannahackme/ScriptSentry-Extention)** | `JavaScript` | Chrome extension that monitors and lists every JS URL a page loads in real time, auto-categorized by risk with secret leak detection and a dark-mode UI. | ![Active](https://img.shields.io/badge/STATUS-INTERCEPTOR-38BDF8?style=flat-square) |
 
-<br>
+<br><br>
 
-<!-- LASER DIVIDER -->
-<p align="center">
-  <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
-</p>
-
-<br>
-
-## 📊 Real-Time GitHub Telemetry &amp; Velocity
+## 📊 Real-Time Telemetry &amp; Activity Velocity
 
 <div align="center">
 
-<!-- GITHUB STATS CARDS -->
+<!-- LOCAL SELF-CONTAINED METRICS CARD (100% Uptime, Zero 503 Errors) -->
 <a href="https://github.com/youwannahackme">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=youwannahackme&show_icons=true&theme=dark&hide_border=false&border_color=00FF9C&bg_color=050814&title_color=00F0FF&icon_color=00FF9C&text_color=CBD5E1&count_private=true" alt="Shoaib's GitHub Stats" />
-</a>
-<a href="https://github.com/youwannahackme">
-  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=youwannahackme&layout=compact&theme=dark&hide_border=false&border_color=00F0FF&bg_color=050814&title_color=00FF9C&text_color=CBD5E1" alt="Top Languages" />
+  <img width="100%" src="./assets/metrics.svg" alt="Repository Metrics and Language Distribution" />
 </a>
 
 <br><br>
 
-<!-- STREAK STATS -->
+<!-- STREAK STATS WIDGET (Confirmed Working & Styled) -->
 <a href="https://github.com/youwannahackme">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=youwannahackme&theme=dark&hide_border=false&border=00FF9C&background=050814&stroke=00FF9C&ring=00F0FF&fire=00FF9C&currStreakLabel=00F0FF&sideLabels=CBD5E1&dates=64748B" alt="GitHub Streak" />
-</a>
-
-<br><br>
-
-<!-- TROPHIES -->
-<a href="https://github.com/youwannahackme">
-  <img src="https://github-profile-trophy.vercel.app/?username=youwannahackme&theme=dracula&no-frame=true&row=1&margin-w=15&column=7" alt="GitHub Trophies" />
-</a>
-
-<br><br>
-
-<!-- ACTIVITY GRAPH -->
-<a href="https://github.com/youwannahackme">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=youwannahackme&theme=react-dark&hide_border=false&border_color=1a2744&bg_color=050814&color=00ff9c&line=00ff9c&point=00f0ff&area=true&area_color=00ff9c" alt="Activity Graph" />
+  <img src="https://streak-stats.demolab.com/?user=youwannahackme&theme=dark&hide_border=false&border=00FF9C&background=050814&stroke=00FF9C&ring=00F0FF&fire=00FF9C&currStreakLabel=00F0FF&sideLabels=CBD5E1&dates=64748B" alt="GitHub Streak" />
 </a>
 
 </div>
 
-<br>
-
-<!-- LASER DIVIDER -->
-<p align="center">
-  <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
-</p>
-
-<br>
+<br><br>
 
 ## 🐍 Contribution Grid Radar
 
@@ -186,10 +141,25 @@ Cybersecurity researcher and toolsmith engineering high-speed offensive-security
 <img width="100%" src="https://raw.githubusercontent.com/youwannahackme/youwannahackme/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" />
 
 <p align="center">
-  <sub>⚡ Automatically compiled by <b>GitHub Actions</b> using custom offensive-security neon matrix palettes.</sub>
+  <sub>⚡ Automatically compiled by <b>GitHub Actions</b> on a 6-hour cron schedule.</sub>
 </p>
 
 </div>
+
+<br><br>
+
+## 🤝 Connect &amp; Secure Collaboration
+
+<div align="center">
+
+```
+========================================================================================
+[+] DISPATCH PROTOCOL : OPEN FOR VULNERABILITY RESEARCH & PEN-TESTING OPPORTUNITIES
+[+] DIRECT EMAIL      : arshadshoaib029@gmail.com
+[+] LINKEDIN NETWORK  : https://www.linkedin.com/in/shoaib-arshad-580681408/
+[+] GITHUB PROFILE    : https://github.com/youwannahackme
+========================================================================================
+```
 
 <br>
 
@@ -197,21 +167,6 @@ Cybersecurity researcher and toolsmith engineering high-speed offensive-security
 <p align="center">
   <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
 </p>
-
-<br>
-
-## 🤝 Connect &amp; Secure Collaboration
-
-<div align="center">
-
-```
-=====================================================================================
-[+] DISPATCH PROTOCOL: OPEN FOR VULNERABILITY RESEARCH & INTERNSHIP OPPORTUNITIES
-[+] ENCRYPTED COMMS   : arshadshoaib029@gmail.com
-[+] LINKEDIN NETWORK  : https://www.linkedin.com/in/shoaib-arshad-580681408/
-[+] GITHUB REPOSITORY : https://github.com/youwannahackme
-=====================================================================================
-```
 
 <br>
 
