@@ -2,7 +2,7 @@
 
 <!-- HERO ANIMATED CYBER BANNER -->
 <a href="https://github.com/youwannahackme">
-  <img width="100%" src="./assets/banner.svg" alt="Shoaib Arshad - YouWannaHackMe Banner" />
+  <img width="100%" src="./assets/banner.svg" alt="whoami_404 - YouWannaHackMe Banner" />
 </a>
 
 <br>
@@ -124,7 +124,7 @@ Cybersecurity researcher and toolsmith engineering high-speed offensive-security
 
 <br><br>
 
-<!-- STREAK STATS WIDGET (Confirmed Working & Styled) -->
+<!-- STREAK STATS WIDGET -->
 <a href="https://github.com/youwannahackme">
   <img src="https://streak-stats.demolab.com/?user=youwannahackme&theme=dark&hide_border=false&border=00FF9C&background=050814&stroke=00FF9C&ring=00F0FF&fire=00FF9C&currStreakLabel=00F0FF&sideLabels=CBD5E1&dates=64748B" alt="GitHub Streak" />
 </a>
@@ -152,14 +152,27 @@ Cybersecurity researcher and toolsmith engineering high-speed offensive-security
 
 <div align="center">
 
-```
-========================================================================================
-[+] DISPATCH PROTOCOL : OPEN FOR VULNERABILITY RESEARCH & PEN-TESTING OPPORTUNITIES
-[+] DIRECT EMAIL      : arshadshoaib029@gmail.com
-[+] LINKEDIN NETWORK  : https://www.linkedin.com/in/shoaib-arshad-580681408/
-[+] GITHUB PROFILE    : https://github.com/youwannahackme
-========================================================================================
-```
+<!-- ANIMATED CYBER DISPATCH CARD -->
+<a href="https://www.linkedin.com/in/shoaib-arshad-580681408/">
+  <img width="100%" src="./assets/connect.svg" alt="Secure Dispatch Protocol" />
+</a>
+
+<br><br>
+
+<!-- DIRECT INTERACTIVE CONTACT BUTTONS -->
+<p align="center">
+  <a href="mailto:arshadshoaib029@gmail.com">
+    <img src="https://img.shields.io/badge/Direct_Email-arshadshoaib029%40gmail.com-00FF9C?style=for-the-badge&logo=gmail&logoColor=050814&labelColor=050814" alt="Direct Email" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/shoaib-arshad-580681408/">
+    <img src="https://img.shields.io/badge/LinkedIn-Shoaib_Arshad-00F0FF?style=for-the-badge&logo=linkedin&logoColor=050814&labelColor=050814" alt="LinkedIn" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/youwannahackme">
+    <img src="https://img.shields.io/badge/GitHub-youwannahackme-7000FF?style=for-the-badge&logo=github&logoColor=white&labelColor=050814" alt="GitHub" />
+  </a>
+</p>
 
 <br>
 
