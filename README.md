@@ -1,121 +1,223 @@
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/youwannahackme/youwannahackme/main/assets/banner.svg" />
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=800&color=00FF9C&center=true&vCenter=true&width=600&lines=building+offensive-security+tooling+in+Go;grinding+PortSwigger+%2B+HTB+daily;currently+chasing+CVEs+for+fun" />
+<!-- HERO ANIMATED CYBER BANNER -->
+<a href="https://github.com/youwannahackme">
+  <img width="100%" src="./assets/banner.svg" alt="Shoaib Arshad - YouWannaHackMe Banner" />
+</a>
 
 <br>
 
-<a href="mailto:arshadshoaib029@gmail.com">
-  <img src="https://img.shields.io/badge/Email-arshadshoaib029%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/shoaib-arshad-580681408/">
-  <img src="https://img.shields.io/badge/LinkedIn-Shoaib%20Arshad-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
+<!-- DYNAMIC TYPING TERMINAL -->
 <a href="https://github.com/youwannahackme">
-  <img src="https://img.shields.io/badge/GitHub-youwannahackme-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2600&pause=800&color=00FF9C&center=true&vCenter=true&multiline=false&width=780&height=45&lines=Building+Offensive-Security+Tooling+in+Go+%26+Python;Weaponized+Recon+%26+Automated+OSINT+Engines;Grinding+PortSwigger+Web+Security+Academy+%2B+HackTheBox;Hunting+CVEs+%26+High-Impact+Bounties;Recon+first.+Exploit+second.+Report+always." alt="Typing SVG" />
+</a>
+
+<br>
+
+<!-- CYBER SOCIAL SHIELDS -->
+<p align="center">
+  <a href="mailto:arshadshoaib029@gmail.com">
+    <img src="https://img.shields.io/badge/Email-arshadshoaib029%40gmail.com-00FF9C?style=for-the-badge&logo=gmail&logoColor=050814&labelColor=050814" alt="Email" />
+  </a>
+  <a href="https://www.linkedin.com/in/shoaib-arshad-580681408/">
+    <img src="https://img.shields.io/badge/LinkedIn-Shoaib%20Arshad-00F0FF?style=for-the-badge&logo=linkedin&logoColor=050814&labelColor=050814" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/youwannahackme">
+    <img src="https://img.shields.io/badge/GitHub-youwannahackme-7000FF?style=for-the-badge&logo=github&logoColor=white&labelColor=050814" alt="GitHub" />
+  </a>
+  <a href="https://portswigger.net/web-security">
+    <img src="https://img.shields.io/badge/PortSwigger-Academy%20Grind-FF5500?style=for-the-badge&logo=burpsuite&logoColor=white&labelColor=050814" alt="PortSwigger" />
+  </a>
+  <a href="https://www.hackthebox.com/">
+    <img src="https://img.shields.io/badge/HackTheBox-Active%20Lab-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=050814&labelColor=050814" alt="HackTheBox" />
+  </a>
+</p>
+
+<!-- PROFILE VIEW COUNTER -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=youwannahackme&label=SURFACE%20SCANS&color=00FF9C&style=for-the-badge&base=100" alt="Profile Views" />
+</p>
+
+</div>
+
+<br>
+
+<!-- LASER DIVIDER -->
+<p align="center">
+  <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
+</p>
+
+<br>
+
+## 📡 System Diagnostic &amp; Operator Identity
+
+Cybersecurity researcher and toolsmith engineering high-speed offensive-security software from first principles — focusing on **subdomain discovery**, **passive/active web spiders**, **heuristic attack-surface classifiers**, and **real-time CVE triage**. Currently advancing through **PortSwigger Web Security Academy** and **Hack The Box** while testing live bug bounty targets and preparing for Red Team / Penetration Testing opportunities.
+
+<br>
+
+<!-- ANIMATED INTERACTIVE TERMINAL -->
+<div align="center">
+  <img width="100%" src="./assets/terminal.svg" alt="Animated Security Terminal" />
+</div>
+
+<br>
+
+<!-- LASER DIVIDER -->
+<p align="center">
+  <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
+</p>
+
+<br>
+
+## ⚡ Technical Arsenal &amp; Weaponized Stack
+
+<div align="center">
+
+<!-- ANIMATED SKILLS MATRIX -->
+<img width="100%" src="./assets/skills.svg" alt="Offensive Security Skills Matrix" />
+
+<br><br>
+
+<!-- TECH ICON DOCK -->
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=go,python,bash,linux,docker,js,ts,vscode,git,github,postman&theme=dark&perline=11" alt="Tech Stack Icons" />
 </a>
 
 <br><br>
 
-<img src="https://komarev.com/ghpvc/?username=youwannahackme&label=Profile%20Views&color=00ff9c&style=for-the-badge" />
+<!-- OFFSEC SPECIALIZATION BADGES -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Recon-Subdomain%20OSINT%20(68%2B%20Sources)-00FF9C?style=flat-square&logo=target&logoColor=050814" />
+  <img src="https://img.shields.io/badge/Crawling-Active%20%2B%20Passive%20Spidering-00F0FF?style=flat-square&logo=googlechrome&logoColor=050814" />
+  <img src="https://img.shields.io/badge/Analysis-Value--Shape%20Heuristics-7000FF?style=flat-square&logo=codeforces&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vulnerability-XSS%20%2F%20SSRF%20%2F%20IDOR%20%2F%20CORS-FF0055?style=flat-square&logo=hackthebox&logoColor=white" />
+  <img src="https://img.shields.io/badge/Intelligence-CVSS%20%2F%20EPSS%20%2F%20CISA%20KEV-F59E0B?style=flat-square&logo=shield&logoColor=white" />
+</p>
 
 </div>
 
 <br>
 
-## About
+<!-- LASER DIVIDER -->
+<p align="center">
+  <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
+</p>
 
-Cybersecurity student building an offensive-security toolkit from the ground up — subdomain enumeration, web crawling, vulnerability classification, and CVE intelligence. Currently working through **PortSwigger Web Security Academy** and **Hack The Box** while chasing live bug bounties, on the way toward a penetration testing internship.
+<br>
+
+## 🛠️ Weaponized Engines &amp; Featured Projects
+
+<div align="center">
+
+<!-- ANIMATED PROJECTS SHOWCASE -->
+<img width="100%" src="./assets/projects.svg" alt="Featured Tooling Matrix" />
+
+</div>
+
+<br>
+
+| Target Engine | Core Tech | Architecture &amp; Capabilities | Status |
+|---|:---:|---|:---:|
+| ⚡ **[Subix](https://github.com/youwannahackme/subix)** | `Go` | Hybrid subdomain enumeration engine combining **68 passive OSINT sources** with active multi-threaded DNS resolution, dynamic wildcard filtering, and recursive scanning. | ![Active](https://img.shields.io/badge/STATUS-OPERATIONAL-00FF9C?style=flat-square) |
+| 🕷️ **[URLReeper](https://github.com/youwannahackme/urlreeper)** | `Go` | Hybrid web crawling &amp; spidering framework for security recon — merges passive discovery (Wayback, OTX, AlienVault) with high-speed active crawling. | ![Active](https://img.shields.io/badge/STATUS-HIGH--SPEED-00F0FF?style=flat-square) |
+| 🎯 **[Vulncat](https://github.com/youwannahackme/vulncat)** | `Go` | Vulnerability-surface URL classifier for bug bounty hunting. Replaces flat regex matching with multi-signal heuristics, value-shape analysis, and REST API context awareness. | ![Active](https://img.shields.io/badge/STATUS-HEURISTIC-A855F7?style=flat-square) |
+| 🔥 **[RefleX](https://github.com/youwannahackme/RefleX)** | `Python` | High-performance concurrent scanner for reflected URL parameters and potential XSS, with case-insensitive matching and HTML-context severity scoring. | ![Active](https://img.shields.io/badge/STATUS-SCORING-FF0055?style=flat-square) |
+| 🛡️ **[CVE Hunter Pro](https://github.com/youwannahackme/CVE-Hunter-Extention)** | `JavaScript` | Chrome extension for single-lookup CVE triage — CVSS scoring, EPSS exploit probability, CISA KEV status, and GitHub PoC discovery in one popup. | ![Active](https://img.shields.io/badge/STATUS-EXTENSION-F59E0B?style=flat-square) |
+| 🔍 **[ScriptSentry](https://github.com/youwannahackme/ScriptSentry-Extention)** | `JavaScript` | Chrome extension that monitors and lists every JS URL a page loads in real time, auto-categorized by risk with secret leak detection and a dark-mode UI. | ![Active](https://img.shields.io/badge/STATUS-INTERCEPTOR-38BDF8?style=flat-square) |
+
+<br>
+
+<!-- LASER DIVIDER -->
+<p align="center">
+  <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
+</p>
+
+<br>
+
+## 📊 Real-Time GitHub Telemetry &amp; Velocity
+
+<div align="center">
+
+<!-- GITHUB STATS CARDS -->
+<a href="https://github.com/youwannahackme">
+  <img height="175" src="https://github-readme-stats.vercel.app/api?username=youwannahackme&show_icons=true&theme=dark&hide_border=false&border_color=00FF9C&bg_color=050814&title_color=00F0FF&icon_color=00FF9C&text_color=CBD5E1&count_private=true" alt="Shoaib's GitHub Stats" />
+</a>
+<a href="https://github.com/youwannahackme">
+  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=youwannahackme&layout=compact&theme=dark&hide_border=false&border_color=00F0FF&bg_color=050814&title_color=00FF9C&text_color=CBD5E1" alt="Top Languages" />
+</a>
+
+<br><br>
+
+<!-- STREAK STATS -->
+<a href="https://github.com/youwannahackme">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=youwannahackme&theme=dark&hide_border=false&border=00FF9C&background=050814&stroke=00FF9C&ring=00F0FF&fire=00FF9C&currStreakLabel=00F0FF&sideLabels=CBD5E1&dates=64748B" alt="GitHub Streak" />
+</a>
+
+<br><br>
+
+<!-- TROPHIES -->
+<a href="https://github.com/youwannahackme">
+  <img src="https://github-profile-trophy.vercel.app/?username=youwannahackme&theme=dracula&no-frame=true&row=1&margin-w=15&column=7" alt="GitHub Trophies" />
+</a>
+
+<br><br>
+
+<!-- ACTIVITY GRAPH -->
+<a href="https://github.com/youwannahackme">
+  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=youwannahackme&theme=react-dark&hide_border=false&border_color=1a2744&bg_color=050814&color=00ff9c&line=00ff9c&point=00f0ff&area=true&area_color=00ff9c" alt="Activity Graph" />
+</a>
+
+</div>
+
+<br>
+
+<!-- LASER DIVIDER -->
+<p align="center">
+  <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
+</p>
+
+<br>
+
+## 🐍 Contribution Grid Radar
+
+<div align="center">
+
+<!-- SNAKE ANIMATION -->
+<img width="100%" src="https://raw.githubusercontent.com/youwannahackme/youwannahackme/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" />
+
+<p align="center">
+  <sub>⚡ Automatically compiled by <b>GitHub Actions</b> using custom offensive-security neon matrix palettes.</sub>
+</p>
+
+</div>
+
+<br>
+
+<!-- LASER DIVIDER -->
+<p align="center">
+  <img width="100%" src="./assets/cyber_divider.svg" alt="Cyber Divider" />
+</p>
+
+<br>
+
+## 🤝 Connect &amp; Secure Collaboration
+
+<div align="center">
 
 ```
-class SecurityResearcher:
-    def __init__(self):
-        self.focus     = ["bug bounty", "vulnerability research", "tool dev"]
-        self.stack     = ["Go", "Python", "JavaScript/TypeScript", "Bash"]
-        self.learning  = ["PortSwigger Web Security Academy", "Hack The Box"]
-        self.goal      = "penetration testing internship"
-
-    def philosophy(self):
-        return "recon first. exploit second. report always."
+=====================================================================================
+[+] DISPATCH PROTOCOL: OPEN FOR VULNERABILITY RESEARCH & INTERNSHIP OPPORTUNITIES
+[+] ENCRYPTED COMMS   : arshadshoaib029@gmail.com
+[+] LINKEDIN NETWORK  : https://www.linkedin.com/in/shoaib-arshad-580681408/
+[+] GITHUB REPOSITORY : https://github.com/youwannahackme
+=====================================================================================
 ```
 
 <br>
 
-## Tech Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=go,python,js,ts,bash,linux,git,vscode,github,docker&theme=dark&perline=10" />
-
-</div>
-
-<br>
-
-## Featured Projects
-
-| Project | Stack | Description |
-|---|---|---|
-| **[Subix](https://github.com/youwannahackme/subix)** | Go | Hybrid subdomain enumeration engine combining 68 passive OSINT sources with active multi-threaded DNS resolution, dynamic wildcard filtering, and recursive scanning. |
-| **[URLReeper](https://github.com/youwannahackme/urlreeper)** | Go | Hybrid web crawling & spidering framework for security recon — merges passive discovery (Wayback, OTX) with high-speed active crawling. |
-| **[Vulncat](https://github.com/youwannahackme/vulncat)** | Go | Vulnerability-surface URL classifier for bug bounty hunting. Replaces flat regex matching with multi-signal heuristics, value-shape analysis, and REST API context awareness. |
-| **[RefleX](https://github.com/youwannahackme/RefleX)** | Python | High-performance concurrent scanner for reflected URL parameters and potential XSS, with case-insensitive matching and HTML-context severity scoring. |
-| **[CVE Hunter Pro](https://github.com/youwannahackme/CVE-Hunter-Extention)** | JavaScript | Chrome extension for single-lookup CVE triage — CVSS scoring, EPSS exploit probability, CISA KEV status, and GitHub PoC discovery in one popup. |
-| **[ScriptSentry](https://github.com/youwannahackme/ScriptSentry-Extention)** | JavaScript | Chrome extension that monitors and lists every JS URL a page loads in real time, auto-categorized by risk, with a dark-mode UI. |
-
-<br>
-
-## GitHub Stats
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=youwannahackme&show_icons=true&theme=dark&hide_border=true&count_private=true&bg_color=0d1117" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=youwannahackme&layout=compact&theme=dark&hide_border=true&bg_color=0d1117" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=youwannahackme&theme=dark&hide_border=true&background=0d1117" />
-
-<img src="https://github-profile-trophy.vercel.app/?username=youwannahackme&theme=darkhub&no-frame=true&row=1&margin-w=15&column=7" />
-
-</div>
-
-<br>
-
-## Deep Metrics
-
-<div align="center">
-
-<img width="100%" src="https://raw.githubusercontent.com/youwannahackme/youwannahackme/main/metrics.svg" />
-
-</div>
-
-> Self-hosted via GitHub Action (`metrics.yml`) — isometric commit calendar, language-by-time-of-day breakdown, and repo velocity. Needs a one-time token setup, covered below.
-
-<br>
-
-## Activity Graph
-
-<div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=youwannahackme&theme=react-dark&hide_border=true&bg_color=0d1117&color=00ff9c&line=00ff9c&point=e6edf3" />
-
-</div>
-
-<br>
-
-## Contribution Snake
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/youwannahackme/youwannahackme/output/github-contribution-grid-snake-dark.svg" />
-
-</div>
-
-> Animated automatically from your commit history — see setup note below.
-
-<br>
-
-<div align="center">
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1e293b,100:0f172a&height=120&section=footer&animation=fadeIn" />
+<!-- ANIMATED CYBER FOOTER -->
+<a href="https://github.com/youwannahackme">
+  <img width="100%" src="./assets/footer.svg" alt="Cyberpunk Footer" />
+</a>
 
 </div>

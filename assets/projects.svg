@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09101f" />
+      <stop offset="100%" stop-color="#040711" />
+    </linearGradient>
+
+    <linearGradient id="pBorderGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF9C" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="pBorderCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#7000FF" stop-opacity="0.2" />
+    </linearGradient>
+
+    <filter id="pGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes cardPulse {
+      0%, 100% { border-color: rgba(0,255,156,0.3); }
+      50% { border-color: rgba(0,240,255,0.7); }
+    }
+    @keyframes radarPing {
+      0% { r: 3; opacity: 1; }
+      100% { r: 8; opacity: 0; }
+    }
+    .p-title {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+    .p-desc {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-size: 11.5px;
+      fill: #94A3B8;
+      line-height: 1.4;
+    }
+    .p-lang {
+      font-family: 'Fira Code', monospace;
+      font-size: 10px;
+      font-weight: 700;
+    }
+    .p-stat {
+      font-family: 'Fira Code', monospace;
+      font-size: 9.5px;
+      fill: #64748B;
+    }
+  </style>
+
+  <!-- Base Grid Canvas -->
+  <rect width="920" height="460" rx="14" fill="#040711" stroke="#16233b" stroke-width="1.5" />
+
+  <!-- Section Header -->
+  <g transform="translate(25, 26)">
+    <text font-family="'Fira Code', monospace" font-size="12" font-weight="700" fill="#00FF9C" letter-spacing="2">
+      // WEAPONIZED OFFENSIVE TOOLKIT &amp; RECON ARSENAL
+    </text>
+    <text x="870" text-anchor="end" font-family="'Fira Code', monospace" font-size="10" fill="#00F0FF" letter-spacing="1">
+      6 HIGH-VELOCITY ENGINES
+    </text>
+    <line x1="0" y1="12" x2="870" y2="12" stroke="#1a2b4a" stroke-width="1" />
+  </g>
+
+  <!-- ================= ROW 1 ================= -->
+  <!-- CARD 1: Subix -->
+  <g transform="translate(25, 52)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#00FF9C" stroke-width="1.2" stroke-opacity="0.4" />
+    
+    <!-- Header: Title & Language Pill -->
+    <text x="16" y="28" class="p-title" fill="#00FF9C">⚡ Subix</text>
+    <rect x="210" y="14" width="48" height="18" rx="4" fill="#00FF9C" fill-opacity="0.15" stroke="#00FF9C" stroke-width="0.8" />
+    <text x="234" y="27" text-anchor="middle" class="p-lang" fill="#00FF9C">Go</text>
+
+    <!-- Description -->
+    <text x="16" y="52" class="p-desc">
+      <tspan x="16" dy="0">Hybrid subdomain enumeration</tspan>
+      <tspan x="16" dy="16">engine merging 68 OSINT sources,</tspan>
+      <tspan x="16" dy="16">active multi-threaded DNS, and</tspan>
+      <tspan x="16" dy="16">dynamic wildcard filtering.</tspan>
+    </text>
+
+    <!-- Specs / Highlights -->
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#0b1526" stroke="#1c2d4a" stroke-width="0.8" />
+      <text x="10" y="16" class="p-stat">CORE: <tspan fill="#38BDF8">68 Sources • Multi-DNS</tspan></text>
+      <text x="10" y="30" class="p-stat">STATUS: <tspan fill="#00FF9C">Production Ready</tspan></text>
+    </g>
+  </g>
+
+  <!-- CARD 2: URLReeper -->
+  <g transform="translate(322, 52)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#00F0FF" stroke-width="1.2" stroke-opacity="0.4" />
+    
+    <!-- Header: Title & Language Pill -->
+    <text x="16" y="28" class="p-title" fill="#00F0FF">🕷️ URLReeper</text>
+    <rect x="210" y="14" width="48" height="18" rx="4" fill="#00F0FF" fill-opacity="0.15" stroke="#00F0FF" stroke-width="0.8" />
+    <text x="234" y="27" text-anchor="middle" class="p-lang" fill="#00F0FF">Go</text>
+
+    <!-- Description -->
+    <text x="16" y="52" class="p-desc">
+      <tspan x="16" dy="0">Hybrid recon spider &amp; crawler.</tspan>
+      <tspan x="16" dy="16">Merges passive feeds (Wayback,</tspan>
+      <tspan x="16" dy="16">OTX, AlienVault) with rapid</tspan>
+      <tspan x="16" dy="16">active DOM crawling.</tspan>
+    </text>
+
+    <!-- Specs / Highlights -->
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#0b1526" stroke="#1c2d4a" stroke-width="0.8" />
+      <text x="10" y="16" class="p-stat">CORE: <tspan fill="#38BDF8">Wayback/OTX + Fast Crawl</tspan></text>
+      <text x="10" y="30" class="p-stat">STATUS: <tspan fill="#00F0FF">High Performance</tspan></text>
+    </g>
+  </g>
+
+  <!-- CARD 3: Vulncat -->
+  <g transform="translate(620, 52)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#A855F7" stroke-width="1.2" stroke-opacity="0.4" />
+    
+    <!-- Header: Title & Language Pill -->
+    <text x="16" y="28" class="p-title" fill="#C084FC">🎯 Vulncat</text>
+    <rect x="210" y="14" width="48" height="18" rx="4" fill="#A855F7" fill-opacity="0.15" stroke="#A855F7" stroke-width="0.8" />
+    <text x="234" y="27" text-anchor="middle" class="p-lang" fill="#D8B4FE">Go</text>
+
+    <!-- Description -->
+    <text x="16" y="52" class="p-desc">
+      <tspan x="16" dy="0">Attack surface URL classifier.</tspan>
+      <tspan x="16" dy="16">Multi-signal heuristics, value-shape</tspan>
+      <tspan x="16" dy="16">analysis &amp; REST endpoint context</tspan>
+      <tspan x="16" dy="16">for bug bounty hunters.</tspan>
+    </text>
+
+    <!-- Specs / Highlights -->
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#0b1526" stroke="#1c2d4a" stroke-width="0.8" />
+      <text x="10" y="16" class="p-stat">CORE: <tspan fill="#C084FC">Heuristic Shape Engine</tspan></text>
+      <text x="10" y="30" class="p-stat">STATUS: <tspan fill="#A855F7">Intelligent Triage</tspan></text>
+    </g>
+  </g>
+
+  <!-- ================= ROW 2 ================= -->
+  <!-- CARD 4: RefleX -->
+  <g transform="translate(25, 252)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#FF0055" stroke-width="1.2" stroke-opacity="0.4" />
+    
+    <!-- Header: Title & Language Pill -->
+    <text x="16" y="28" class="p-title" fill="#FF0055">🔥 RefleX</text>
+    <rect x="195" y="14" width="63" height="18" rx="4" fill="#FF0055" fill-opacity="0.15" stroke="#FF0055" stroke-width="0.8" />
+    <text x="226" y="27" text-anchor="middle" class="p-lang" fill="#FF77A9">Python</text>
+
+    <!-- Description -->
+    <text x="16" y="52" class="p-desc">
+      <tspan x="16" dy="0">High-performance scanner for</tspan>
+      <tspan x="16" dy="16">reflected parameters &amp; XSS.</tspan>
+      <tspan x="16" dy="16">HTML context severity scoring</tspan>
+      <tspan x="16" dy="16">and concurrent probing.</tspan>
+    </text>
+
+    <!-- Specs / Highlights -->
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#0b1526" stroke="#1c2d4a" stroke-width="0.8" />
+      <text x="10" y="16" class="p-stat">CORE: <tspan fill="#FF77A9">HTML Severity Engine</tspan></text>
+      <text x="10" y="30" class="p-stat">STATUS: <tspan fill="#FF0055">Fast Reflection</tspan></text>
+    </g>
+  </g>
+
+  <!-- CARD 5: CVE Hunter Pro -->
+  <g transform="translate(322, 252)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0.4" />
+    
+    <!-- Header: Title & Language Pill -->
+    <text x="16" y="28" class="p-title" fill="#FBBF24">🛡️ CVE Hunter</text>
+    <rect x="210" y="14" width="48" height="18" rx="4" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="0.8" />
+    <text x="234" y="27" text-anchor="middle" class="p-lang" fill="#FBBF24">JS</text>
+
+    <!-- Description -->
+    <text x="16" y="52" class="p-desc">
+      <tspan x="16" dy="0">Chrome Extension for CVE triage.</tspan>
+      <tspan x="16" dy="16">CVSS scoring, EPSS exploit</tspan>
+      <tspan x="16" dy="16">probability, CISA KEV status &amp;</tspan>
+      <tspan x="16" dy="16">GitHub PoC discovery.</tspan>
+    </text>
+
+    <!-- Specs / Highlights -->
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#0b1526" stroke="#1c2d4a" stroke-width="0.8" />
+      <text x="10" y="16" class="p-stat">CORE: <tspan fill="#FBBF24">EPSS • CVSS • CISA KEV</tspan></text>
+      <text x="10" y="30" class="p-stat">STATUS: <tspan fill="#F59E0B">Extension Ready</tspan></text>
+    </g>
+  </g>
+
+  <!-- CARD 6: ScriptSentry -->
+  <g transform="translate(620, 252)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.4" />
+    
+    <!-- Header: Title & Language Pill -->
+    <text x="16" y="28" class="p-title" fill="#38BDF8">🔍 ScriptSentry</text>
+    <rect x="210" y="14" width="48" height="18" rx="4" fill="#38BDF8" fill-opacity="0.15" stroke="#38BDF8" stroke-width="0.8" />
+    <text x="234" y="27" text-anchor="middle" class="p-lang" fill="#7DD3FC">JS</text>
+
+    <!-- Description -->
+    <text x="16" y="52" class="p-desc">
+      <tspan x="16" dy="0">Real-time script monitor extension.</tspan>
+      <tspan x="16" dy="16">Auto-categorizes third-party JS</tspan>
+      <tspan x="16" dy="16">by risk, detects secrets &amp; leaks</tspan>
+      <tspan x="16" dy="16">with dark-mode UI.</tspan>
+    </text>
+
+    <!-- Specs / Highlights -->
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#0b1526" stroke="#1c2d4a" stroke-width="0.8" />
+      <text x="10" y="16" class="p-stat">CORE: <tspan fill="#38BDF8">Realtime JS Interceptor</tspan></text>
+      <text x="10" y="30" class="p-stat">STATUS: <tspan fill="#0284C7">Active Security</tspan></text>
+    </g>
+  </g>
+</svg>

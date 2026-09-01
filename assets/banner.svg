@@ -1,0 +1,304 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="50%" stop-color="#0a1026" />
+      <stop offset="100%" stop-color="#04060f" />
+    </linearGradient>
+
+    <linearGradient id="neonGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF9C" />
+      <stop offset="50%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#7000FF" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#00FF9C" />
+    </linearGradient>
+
+    <linearGradient id="gridFade" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00FF9C" stop-opacity="0.25" />
+      <stop offset="80%" stop-color="#00F0FF" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="radarBeam" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FF9C" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#00F0FF" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="centerGlow" cx="40%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#00FF9C" stop-opacity="0.12" />
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters for High-End Glow Effects -->
+    <filter id="superGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="2" result="sharpBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="sharpBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes scanline {
+      0% { transform: translateY(-300px); opacity: 0; }
+      20% { opacity: 0.8; }
+      80% { opacity: 0.8; }
+      100% { transform: translateY(300px); opacity: 0; }
+    }
+
+    @keyframes radarSweep {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 15px rgba(0,255,156,0.6)); }
+      50% { opacity: 1; filter: drop-shadow(0 0 25px rgba(0,240,255,0.9)); }
+    }
+
+    @keyframes cyberFlicker {
+      0%, 100% { opacity: 1; }
+      92% { opacity: 1; }
+      93% { opacity: 0.4; }
+      94% { opacity: 1; }
+      96% { opacity: 0.6; }
+      97% { opacity: 1; }
+    }
+
+    @keyframes circuitPulse {
+      0% { stroke-dashoffset: 600; opacity: 0.2; }
+      50% { stroke-dashoffset: 0; opacity: 1; }
+      100% { stroke-dashoffset: -600; opacity: 0.2; }
+    }
+
+    @keyframes beaconBlink {
+      0%, 100% { opacity: 0.3; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.15); }
+    }
+
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0; }
+      20% { opacity: 0.7; }
+      80% { opacity: 0.7; }
+      100% { transform: translateY(-40px) translateX(15px); opacity: 0; }
+    }
+
+    .main-title {
+      font-family: 'Courier New', 'Fira Code', monospace;
+      font-weight: 900;
+      font-size: 42px;
+      letter-spacing: 6px;
+      fill: url(#neonGreenGrad);
+      animation: pulseGlow 4s infinite ease-in-out, cyberFlicker 6s infinite ease-in-out;
+    }
+
+    .sub-title {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 5px;
+      fill: #00F0FF;
+    }
+
+    .tag-text {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      fill: #8fe8cd;
+    }
+
+    .radar-rotator {
+      transform-origin: 810px 140px;
+      animation: radarSweep 6s infinite linear;
+    }
+
+    .circuit-line {
+      stroke-dasharray: 80 120;
+      animation: circuitPulse 5s infinite linear;
+    }
+
+    .beacon {
+      animation: beaconBlink 1.8s infinite ease-in-out;
+      transform-origin: 65px 238px;
+    }
+
+    .p1 { animation: floatParticle 4s infinite linear; }
+    .p2 { animation: floatParticle 5.5s infinite linear 1s; }
+    .p3 { animation: floatParticle 6.2s infinite linear 2s; }
+    .p4 { animation: floatParticle 4.8s infinite linear 1.5s; }
+  </style>
+
+  <!-- Frame Background -->
+  <rect width="950" height="300" rx="16" fill="url(#bgGrad)" stroke="#1a2744" stroke-width="1.5" />
+  <rect width="950" height="300" rx="16" fill="url(#centerGlow)" />
+
+  <!-- Animated Perspective Cyber Grid Floor -->
+  <g opacity="0.35">
+    <!-- Grid Horizon Line -->
+    <line x1="30" y1="200" x2="920" y2="200" stroke="#00FF9C" stroke-width="0.8" stroke-opacity="0.4" />
+    <line x1="30" y1="225" x2="920" y2="225" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.6" />
+    <line x1="30" y1="255" x2="920" y2="255" stroke="#00F0FF" stroke-width="1.2" stroke-opacity="0.8" />
+    <line x1="30" y1="290" x2="920" y2="290" stroke="#00F0FF" stroke-width="1.5" stroke-opacity="0.9" />
+    
+    <!-- Perspective Converging Lines -->
+    <line x1="475" y1="180" x2="50" y2="300" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="475" y1="180" x2="160" y2="300" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="475" y1="180" x2="270" y2="300" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="475" y1="180" x2="380" y2="300" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="475" y1="180" x2="475" y2="300" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="475" y1="180" x2="570" y2="300" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="475" y1="180" x2="680" y2="300" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="475" y1="180" x2="790" y2="300" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+    <line x1="475" y1="180" x2="900" y2="300" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+  </g>
+
+  <!-- Futuristic Background Circuit Lines -->
+  <g stroke="#00F0FF" stroke-width="1.2" fill="none" opacity="0.6">
+    <path class="circuit-line" d="M 40,60 L 180,60 L 220,100 L 450,100" />
+    <path class="circuit-line" d="M 60,260 L 150,260 L 180,230 L 320,230" stroke="#00FF9C" />
+    <path class="circuit-line" d="M 910,70 L 800,70 L 760,110 L 620,110" />
+    <path class="circuit-line" d="M 880,240 L 770,240 L 730,200 L 660,200" stroke="#7000FF" />
+    
+    <!-- Circuit Nodes -->
+    <circle cx="180" cy="60" r="3" fill="#00FF9C" />
+    <circle cx="220" cy="100" r="2.5" fill="#00F0FF" />
+    <circle cx="800" cy="70" r="3" fill="#00F0FF" />
+    <circle cx="760" cy="110" r="2.5" fill="#7000FF" />
+  </g>
+
+  <!-- Radar HUD Scanner in Top Right -->
+  <g opacity="0.8">
+    <!-- Radar concentric rings -->
+    <circle cx="810" cy="140" r="90" fill="none" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="4 4" />
+    <circle cx="810" cy="140" r="65" fill="none" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.25" />
+    <circle cx="810" cy="140" r="40" fill="none" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="6 3" />
+    <circle cx="810" cy="140" r="15" fill="none" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+    
+    <!-- Radar crosshairs -->
+    <line x1="710" y1="140" x2="910" y2="140" stroke="#00FF9C" stroke-width="0.7" stroke-opacity="0.3" />
+    <line x1="810" y1="40" x2="810" y2="240" stroke="#00FF9C" stroke-width="0.7" stroke-opacity="0.3" />
+    
+    <!-- Rotating Sweep Beam -->
+    <g class="radar-rotator">
+      <path d="M 810,140 L 890,95 A 90 90 0 0 0 810,50 Z" fill="url(#radarBeam)" />
+      <line x1="810" y1="140" x2="890" y2="95" stroke="#00FF9C" stroke-width="1.5" stroke-opacity="0.8" />
+    </g>
+
+    <!-- Radar Blips / Targets -->
+    <circle cx="845" cy="105" r="3.5" fill="#00FF9C" filter="url(#softGlow)" />
+    <circle cx="780" cy="165" r="2.5" fill="#00F0FF" />
+    <circle cx="830" cy="180" r="3" fill="#FF0055" filter="url(#softGlow)">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="838" y="184" fill="#FF0055" font-family="monospace" font-size="8" font-weight="bold">TARGET</text>
+  </g>
+
+  <!-- Ambient Floating Cyber Hex / Text Particles -->
+  <g fill="#00FF9C" font-family="Courier New, monospace" font-size="10" opacity="0.4">
+    <text x="70" y="90" class="p1">0x7F_RECON</text>
+    <text x="260" y="50" class="p2">CVE-2024-INTEL</text>
+    <text x="590" y="80" class="p3">&lt;/PAYLOAD_GEN&gt;</text>
+    <text x="720" y="270" class="p4">PORT:443_SSL</text>
+    <text x="440" y="50" class="p2" fill="#00F0FF">HEURISTIC_SCAN</text>
+  </g>
+
+  <!-- Laser Scan Line Effect -->
+  <g>
+    <line x1="20" y1="0" x2="930" y2="0" stroke="url(#cyanGrad)" stroke-width="2" opacity="0.6" filter="url(#softGlow)">
+      <animateTransform attributeName="transform" type="translate" values="0,20; 0,280; 0,20" dur="8s" repeatCount="indefinite" />
+    </line>
+  </g>
+
+  <!-- High-Tech Corner HUD Brackets -->
+  <g stroke="#00FF9C" stroke-width="2" fill="none" opacity="0.8">
+    <!-- Top Left -->
+    <path d="M 20,45 L 20,20 L 45,20" />
+    <circle cx="20" cy="20" r="2" fill="#00FF9C" />
+    <!-- Top Right -->
+    <path d="M 930,45 L 930,20 L 905,20" />
+    <circle cx="930" cy="20" r="2" fill="#00FF9C" />
+    <!-- Bottom Left -->
+    <path d="M 20,255 L 20,280 L 45,280" />
+    <circle cx="20" cy="280" r="2" fill="#00FF9C" />
+    <!-- Bottom Right -->
+    <path d="M 930,255 L 930,280 L 905,280" />
+    <circle cx="930" cy="280" r="2" fill="#00FF9C" />
+  </g>
+
+  <!-- Top Status Bar HUD -->
+  <g>
+    <!-- Top Micro Tag -->
+    <rect x="52" y="32" width="220" height="22" rx="4" fill="#0d1830" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="65" cy="43" r="3.5" fill="#00FF9C" class="beacon" />
+    <text x="76" y="47" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#00FF9C" letter-spacing="1">OPSEC : WEAPONIZED</text>
+    
+    <!-- Protocol Version / Coordinates -->
+    <text x="680" y="46" font-family="'Fira Code', monospace" font-size="10" fill="#00F0FF" opacity="0.7" letter-spacing="2">SYS_REV: 4.2.0 // GO_OFFSEC</text>
+  </g>
+
+  <!-- HERO CENTER BRANDING -->
+  <!-- Glitch Underlayer (Cyan) -->
+  <text x="50" y="125" class="main-title" fill="#00F0FF" opacity="0.3" transform="translate(-2, 1)">YOU WANNA HACK ME</text>
+  <!-- Glitch Underlayer (Magenta) -->
+  <text x="50" y="125" class="main-title" fill="#FF0055" opacity="0.3" transform="translate(2, -1)">YOU WANNA HACK ME</text>
+  <!-- Main Foreground Title -->
+  <text x="50" y="125" class="main-title" filter="url(#superGlow)">YOU WANNA HACK ME</text>
+
+  <!-- Subtitle with Hacker Accent -->
+  <g transform="translate(54, 158)">
+    <rect x="0" y="-14" width="6" height="18" fill="#00FF9C" />
+    <text x="16" y="0" class="sub-title">SHOAIB ARSHAD <tspan fill="#64748B">//</tspan> OFFENSIVE SECURITY &amp; TOOLING DEV</text>
+  </g>
+
+  <!-- Live Mission Status HUD Pills -->
+  <g transform="translate(52, 195)">
+    <!-- Pill 1: Target Specialization -->
+    <rect x="0" y="0" width="180" height="28" rx="6" fill="#0a1628" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.7" />
+    <circle cx="14" cy="14" r="3" fill="#00F0FF" />
+    <text x="25" y="18" class="tag-text">RECON AUTOMATION</text>
+
+    <!-- Pill 2: Weapon Stack -->
+    <rect x="190" y="0" width="150" height="28" rx="6" fill="#0a1628" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.7" />
+    <circle cx="204" cy="14" r="3" fill="#00FF9C" />
+    <text x="215" y="18" class="tag-text">GO &amp; PYTHON DEV</text>
+
+    <!-- Pill 3: Offensive Labs -->
+    <rect x="350" y="0" width="200" height="28" rx="6" fill="#0a1628" stroke="#7000FF" stroke-width="1" stroke-opacity="0.8" />
+    <circle cx="364" cy="14" r="3" fill="#A855F7" />
+    <text x="375" y="18" class="tag-text" fill="#D8B4FE">PORTSWIGGER &amp; HTB</text>
+
+    <!-- Pill 4: Live Target -->
+    <rect x="560" y="0" width="155" height="28" rx="6" fill="#1e0a20" stroke="#FF0055" stroke-width="1" stroke-opacity="0.8" />
+    <circle cx="574" cy="14" r="3" fill="#FF0055">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.2s" repeatCount="indefinite" />
+    </circle>
+    <text x="585" y="18" class="tag-text" fill="#FF77A9">CVE HUNTING</text>
+  </g>
+
+  <!-- Bottom System Live Telemetry Bar -->
+  <g transform="translate(52, 252)">
+    <rect x="0" y="0" width="845" height="24" rx="4" fill="#050a14" stroke="#1f2d4d" stroke-width="1" />
+    <circle cx="15" cy="12" r="3.5" fill="#00FF9C" class="beacon" />
+    <text x="28" y="16" font-family="'Fira Code', monospace" font-size="10" fill="#00FF9C" font-weight="600">LIVE FEED:</text>
+    <text x="95" y="16" font-family="'Fira Code', monospace" font-size="10" fill="#94A3B8">Subix Engine [68 OSINT Sources Active] • URLReeper [Spidering v2] • Vulncat [Heuristics Online]</text>
+    <text x="755" y="16" font-family="'Fira Code', monospace" font-size="10" fill="#00F0FF" font-weight="700">STATUS: 200 OK</text>
+  </g>
+</svg>

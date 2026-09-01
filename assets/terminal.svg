@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14" />
+      <stop offset="100%" stop-color="#020409" />
+    </linearGradient>
+
+    <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF9C" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#00F0FF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#7000FF" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="termHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0e1726" />
+      <stop offset="100%" stop-color="#080d1a" />
+    </linearGradient>
+
+    <filter id="termGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    @keyframes lineFade1 {
+      0% { opacity: 0; transform: translateY(4px); }
+      10% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 1; }
+    }
+
+    @keyframes pulseLed {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; filter: drop-shadow(0 0 6px #00FF9C); }
+    }
+
+    .code-font {
+      font-family: 'Fira Code', 'Courier New', Consolas, monospace;
+      font-size: 13px;
+    }
+
+    .cursor {
+      animation: blink 1s infinite;
+      fill: #00FF9C;
+    }
+
+    .keyword { fill: #FF7B72; font-weight: 600; }
+    .defname { fill: #D2A8FF; font-weight: 600; }
+    .func { fill: #79C0FF; }
+    .prop { fill: #7EE787; }
+    .string { fill: #A5D6FF; }
+    .comment { fill: #6E7681; font-style: italic; }
+    .accent { fill: #00FF9C; }
+    .cyan { fill: #00F0FF; }
+    .dim { fill: #484F58; }
+
+    .line-anim {
+      animation: lineFade1 0.5s ease-out forwards;
+    }
+  </style>
+
+  <!-- Outer Glowing Terminal Window -->
+  <rect x="2" y="2" width="876" height="396" rx="12" fill="url(#termBg)" stroke="url(#termBorder)" stroke-width="1.8" />
+
+  <!-- Terminal Title Bar -->
+  <path d="M 3,14 A 11 11 0 0 1 14,3 L 866,3 A 11 11 0 0 1 877,14 L 877,40 L 3,40 Z" fill="url(#termHeader)" />
+  <line x1="3" y1="40" x2="877" y2="40" stroke="#1f293d" stroke-width="1" />
+
+  <!-- macOS / Unix Window Buttons -->
+  <g transform="translate(18, 16)">
+    <circle cx="0" cy="5" r="5.5" fill="#FF5F56" />
+    <circle cx="18" cy="5" r="5.5" fill="#FFBD2E" />
+    <circle cx="36" cy="5" r="5.5" fill="#27C93F" />
+  </g>
+
+  <!-- Terminal Title / Session Info -->
+  <g transform="translate(440, 25)" text-anchor="middle">
+    <text font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8" font-weight="600" letter-spacing="1">
+      <tspan fill="#00FF9C">root@youwannahackme</tspan>:<tspan fill="#00F0FF">~</tspan># offsec-kernel --daemon=armed
+    </text>
+  </g>
+
+  <!-- Quick Status LED in Header -->
+  <g transform="translate(830, 21)">
+    <circle cx="0" cy="0" r="4" fill="#00FF9C" style="animation: pulseLed 2s infinite;" />
+    <text x="8" y="3" font-family="monospace" font-size="9" fill="#00FF9C" font-weight="bold">ACTIVE</text>
+  </g>
+
+  <!-- Terminal Content Lines -->
+  <g transform="translate(28, 70)" class="code-font">
+    <!-- Line 1: Class Definition -->
+    <text y="0">
+      <tspan class="keyword">class</tspan> <tspan class="defname">SecurityResearcher</tspan><tspan fill="#C9D1D9">:</tspan>
+    </text>
+
+    <!-- Line 2: Initializer -->
+    <text y="24" x="20">
+      <tspan class="keyword">def</tspan> <tspan class="func">__init__</tspan><tspan fill="#C9D1D9">(self):</tspan>
+    </text>
+
+    <!-- Line 3: Focus Vector -->
+    <text y="48" x="40">
+      <tspan class="prop">self.focus</tspan>     <tspan fill="#C9D1D9">=</tspan> <tspan fill="#C9D1D9">[</tspan><tspan class="string">"bug bounty"</tspan><tspan fill="#C9D1D9">, </tspan><tspan class="string">"vulnerability research"</tspan><tspan fill="#C9D1D9">, </tspan><tspan class="string">"tool dev"</tspan><tspan fill="#C9D1D9">]</tspan>
+    </text>
+
+    <!-- Line 4: Weaponized Stack -->
+    <text y="72" x="40">
+      <tspan class="prop">self.stack</tspan>     <tspan fill="#C9D1D9">=</tspan> <tspan fill="#C9D1D9">[</tspan><tspan class="string">"Go"</tspan><tspan fill="#C9D1D9">, </tspan><tspan class="string">"Python"</tspan><tspan fill="#C9D1D9">, </tspan><tspan class="string">"JavaScript/TypeScript"</tspan><tspan fill="#C9D1D9">, </tspan><tspan class="string">"Bash"</tspan><tspan fill="#C9D1D9">]</tspan>
+    </text>
+
+    <!-- Line 5: Continuous Training -->
+    <text y="96" x="40">
+      <tspan class="prop">self.training</tspan>  <tspan fill="#C9D1D9">=</tspan> <tspan fill="#C9D1D9">[</tspan><tspan class="string">"PortSwigger Web Security Academy"</tspan><tspan fill="#C9D1D9">, </tspan><tspan class="string">"Hack The Box"</tspan><tspan fill="#C9D1D9">]</tspan>
+    </text>
+
+    <!-- Line 6: Objective -->
+    <text y="120" x="40">
+      <tspan class="prop">self.objective</tspan> <tspan fill="#C9D1D9">=</tspan> <tspan class="string">"Penetration Testing &amp; Red Team Engineering"</tspan>
+    </text>
+
+    <!-- Line 7: Philosophy Function -->
+    <text y="152" x="20">
+      <tspan class="keyword">def</tspan> <tspan class="func">philosophy</tspan><tspan fill="#C9D1D9">(self):</tspan>
+    </text>
+
+    <!-- Line 8: Return Statement -->
+    <text y="176" x="40">
+      <tspan class="keyword">return</tspan> <tspan class="string">"recon first. exploit second. report always."</tspan>
+    </text>
+
+    <!-- Divider line inside terminal -->
+    <line x1="0" y1="205" x2="820" y2="205" stroke="#1f293d" stroke-dasharray="4 4" />
+
+    <!-- Live Execution / Diagnostics Trace -->
+    <text y="230" x="0">
+      <tspan class="accent">[+] EXECUTION TRACE:</tspan> <tspan class="cyan">security_engine.init()</tspan> <tspan class="comment"># scanning attack surface...</tspan>
+    </text>
+
+    <text y="254" x="0">
+      <tspan fill="#38BDF8">&gt;&gt;&gt; Subix:</tspan> <tspan fill="#94A3B8">68 passive OSINT sources active | Dynamic wildcard filtering: ON</tspan>
+    </text>
+
+    <text y="278" x="0">
+      <tspan fill="#38BDF8">&gt;&gt;&gt; URLReeper:</tspan> <tspan fill="#94A3B8">Passive (Wayback/OTX) + Multi-threaded active crawler: READY</tspan>
+    </text>
+
+    <text y="302" x="0">
+      <tspan fill="#38BDF8">&gt;&gt;&gt; Vulncat:</tspan> <tspan fill="#94A3B8">Multi-signal heuristic classifier + REST API awareness: ONLINE</tspan>
+    </text>
+
+    <!-- Terminal Prompt with Animated Blinking Cursor -->
+    <text y="326" x="0">
+      <tspan class="accent">youwannahackme@offsec</tspan><tspan fill="#C9D1D9">:</tspan><tspan class="cyan">~/arsenal</tspan><tspan fill="#C9D1D9">$</tspan> <tspan fill="#E2E8F0">./hunt_vulnerabilities --target=all</tspan>
+      <rect x="440" y="313" width="9" height="15" class="cursor" />
+    </text>
+  </g>
+</svg>

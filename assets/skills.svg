@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 290" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070d1a" />
+      <stop offset="100%" stop-color="#03060c" />
+    </linearGradient>
+
+    <linearGradient id="barGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#00FF9C" />
+    </linearGradient>
+
+    <linearGradient id="barPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7000FF" />
+      <stop offset="100%" stop-color="#D946EF" />
+    </linearGradient>
+
+    <linearGradient id="barRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5F56" />
+      <stop offset="100%" stop-color="#FF0055" />
+    </linearGradient>
+
+    <linearGradient id="barCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <filter id="skillGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes barPulse {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 1; filter: drop-shadow(0 0 8px rgba(0,255,156,0.7)); }
+    }
+
+    @keyframes barGrow {
+      0% { width: 0; }
+      100% { width: var(--w); }
+    }
+
+    .cat-title {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+    }
+
+    .item-label {
+      font-family: 'Fira Code', monospace;
+      font-size: 11px;
+      fill: #CBD5E1;
+    }
+
+    .badge-pill {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="900" height="290" rx="14" fill="url(#cardBg)" stroke="#1a2744" stroke-width="1.5" />
+
+  <!-- Grid Header HUD -->
+  <g transform="translate(25, 25)">
+    <text font-family="'Fira Code', monospace" font-size="12" font-weight="700" fill="#00FF9C" letter-spacing="2">
+      // TECHNICAL ARSENAL &amp; OPERATIONAL PROFICIENCIES
+    </text>
+    <text x="620" font-family="'Fira Code', monospace" font-size="10" fill="#64748B" letter-spacing="1">
+      SPECIALIZATION: RED TEAM / DEV
+    </text>
+    <line x1="0" y1="12" x2="850" y2="12" stroke="#1e293b" stroke-width="1" />
+  </g>
+
+  <!-- COLUMN 1: Offensive Languages & Development -->
+  <g transform="translate(25, 55)">
+    <!-- Box Container -->
+    <rect width="200" height="215" rx="8" fill="#0b1322" stroke="#00FF9C" stroke-width="1" stroke-opacity="0.3" />
+    <text x="14" y="24" class="cat-title" fill="#00FF9C">&gt; TOOLING DEV</text>
+    <line x1="14" y1="32" x2="186" y2="32" stroke="#162c46" />
+
+    <!-- Go -->
+    <g transform="translate(14, 52)">
+      <text class="item-label">Go (Golang)</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#00FF9C">95%</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="163" height="6" rx="3" fill="url(#barGreen)" style="animation: barPulse 3s infinite;" />
+    </g>
+
+    <!-- Python -->
+    <g transform="translate(14, 94)">
+      <text class="item-label">Python (Sec Scripting)</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#00FF9C">90%</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="155" height="6" rx="3" fill="url(#barGreen)" />
+    </g>
+
+    <!-- Bash / Shell -->
+    <g transform="translate(14, 136)">
+      <text class="item-label">Bash / Automation</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#00FF9C">85%</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="146" height="6" rx="3" fill="url(#barGreen)" />
+    </g>
+
+    <!-- JS / Chrome Extensions -->
+    <g transform="translate(14, 178)">
+      <text class="item-label">JS / Chrome Ext</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#00FF9C">88%</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="151" height="6" rx="3" fill="url(#barGreen)" />
+    </g>
+  </g>
+
+  <!-- COLUMN 2: Recon & OSINT Automation -->
+  <g transform="translate(245, 55)">
+    <!-- Box Container -->
+    <rect width="200" height="215" rx="8" fill="#0b1322" stroke="#00F0FF" stroke-width="1" stroke-opacity="0.3" />
+    <text x="14" y="24" class="cat-title" fill="#00F0FF">&gt; RECON &amp; OSINT</text>
+    <line x1="14" y1="32" x2="186" y2="32" stroke="#162c46" />
+
+    <!-- Subdomain Enumeration -->
+    <g transform="translate(14, 52)">
+      <text class="item-label">Subdomain Enumeration</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#00F0FF">95%</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="163" height="6" rx="3" fill="url(#barCyan)" />
+    </g>
+
+    <!-- Web Crawling / Spidering -->
+    <g transform="translate(14, 94)">
+      <text class="item-label">Web Crawling / Spider</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#00F0FF">92%</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="158" height="6" rx="3" fill="url(#barCyan)" />
+    </g>
+
+    <!-- Heuristic Classification -->
+    <g transform="translate(14, 136)">
+      <text class="item-label">Attack Surface Mapping</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#00F0FF">90%</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="155" height="6" rx="3" fill="url(#barCyan)" />
+    </g>
+
+    <!-- Parameter Discovery -->
+    <g transform="translate(14, 178)">
+      <text class="item-label">Parameter Analysis</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#00F0FF">86%</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="148" height="6" rx="3" fill="url(#barCyan)" />
+    </g>
+  </g>
+
+  <!-- COLUMN 3: Web Exploitation & CVE Research -->
+  <g transform="translate(465, 55)">
+    <!-- Box Container -->
+    <rect width="200" height="215" rx="8" fill="#0b1322" stroke="#FF0055" stroke-width="1" stroke-opacity="0.3" />
+    <text x="14" y="24" class="cat-title" fill="#FF0055">&gt; EXPLOIT &amp; CVES</text>
+    <line x1="14" y1="32" x2="186" y2="32" stroke="#162c46" />
+
+    <!-- Web App Security -->
+    <g transform="translate(14, 52)">
+      <text class="item-label">PortSwigger Labs</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#FF0055">Active</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="155" height="6" rx="3" fill="url(#barRed)" />
+    </g>
+
+    <!-- Hack The Box -->
+    <g transform="translate(14, 94)">
+      <text class="item-label">Hack The Box</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#FF0055">Daily</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="150" height="6" rx="3" fill="url(#barRed)" />
+    </g>
+
+    <!-- CVE Triage & EPSS -->
+    <g transform="translate(14, 136)">
+      <text class="item-label">CVE Triage &amp; EPSS</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#FF0055">90%</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="155" height="6" rx="3" fill="url(#barRed)" />
+    </g>
+
+    <!-- XSS / SSRF / IDOR -->
+    <g transform="translate(14, 178)">
+      <text class="item-label">XSS / Auth / Logic</text>
+      <text x="172" text-anchor="end" class="item-label" fill="#FF0055">88%</text>
+      <rect y="8" width="172" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="151" height="6" rx="3" fill="url(#barRed)" />
+    </g>
+  </g>
+
+  <!-- COLUMN 4: Security Labs & Environment -->
+  <g transform="translate(685, 55)">
+    <!-- Box Container -->
+    <rect width="190" height="215" rx="8" fill="#0b1322" stroke="#A855F7" stroke-width="1" stroke-opacity="0.3" />
+    <text x="14" y="24" class="cat-title" fill="#D8B4FE">&gt; ENVIRONMENT</text>
+    <line x1="14" y1="32" x2="176" y2="32" stroke="#162c46" />
+
+    <!-- Linux Internals -->
+    <g transform="translate(14, 52)">
+      <text class="item-label">Linux / Arch / Debian</text>
+      <text x="162" text-anchor="end" class="item-label" fill="#C084FC">94%</text>
+      <rect y="8" width="162" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="152" height="6" rx="3" fill="url(#barPurple)" />
+    </g>
+
+    <!-- Docker -->
+    <g transform="translate(14, 94)">
+      <text class="item-label">Docker / Containers</text>
+      <text x="162" text-anchor="end" class="item-label" fill="#C084FC">85%</text>
+      <rect y="8" width="162" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="138" height="6" rx="3" fill="url(#barPurple)" />
+    </g>
+
+    <!-- Git & CI/CD Actions -->
+    <g transform="translate(14, 136)">
+      <text class="item-label">Git / CI/CD Actions</text>
+      <text x="162" text-anchor="end" class="item-label" fill="#C084FC">88%</text>
+      <rect y="8" width="162" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="142" height="6" rx="3" fill="url(#barPurple)" />
+    </g>
+
+    <!-- Burp Suite / ZAP -->
+    <g transform="translate(14, 178)">
+      <text class="item-label">Burp Suite Pro</text>
+      <text x="162" text-anchor="end" class="item-label" fill="#C084FC">90%</text>
+      <rect y="8" width="162" height="6" rx="3" fill="#152238" />
+      <rect y="8" width="146" height="6" rx="3" fill="url(#barPurple)" />
+    </g>
+  </g>
+</svg>
