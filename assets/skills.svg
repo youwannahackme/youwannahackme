@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08030e" />
+      <stop offset="100%" stop-color="#030206" />
+    </linearGradient>
+
+    <filter id="barGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes barPulse {
+      0%, 100% { opacity: 0.85; }
+      50% { opacity: 1; filter: drop-shadow(0 0 6px #FF0033); }
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="900" height="300" rx="14" fill="url(#cardBg)" stroke="#261033" stroke-width="1.5" />
+
+  <!-- Grid Header HUD -->
+  <g transform="translate(25, 24)">
+    <!-- Akatsuki Cloud Micro Icon -->
+    <g transform="translate(0, 4) scale(0.3)">
+      <path d="M-10,0 C-15,-6 -8,-14 0,-10 C4,-16 16,-12 16,-4 C22,-2 22,6 14,8 C10,12 -2,12 -6,6 C-12,8 -16,4 -10,0 Z" fill="#FF0033" stroke="#FFFFFF" stroke-width="1.5" />
+    </g>
+    <text x="22" y="8" font-family="'Fira Code', 'Courier New', monospace" font-size="12" font-weight="bold" fill="#FF0033" letter-spacing="1.5">
+      // SIX PATHS OCULAR ARSENAL • SHINOBI PROFICIENCIES
+    </text>
+    <text x="850" text-anchor="end" y="8" font-family="'Fira Code', monospace" font-size="10" fill="#A855F7" letter-spacing="1">
+      SPECIALIZATION: RED TEAM / DEV
+    </text>
+    <line x1="0" y1="18" x2="850" y2="18" stroke="#251033" stroke-width="1" />
+  </g>
+
+  <!-- COLUMN 1: Deva Path - Weaponized Dev -->
+  <g transform="translate(25, 58)">
+    <rect width="202" height="225" rx="8" fill="#0d0517" stroke="#FF0033" stroke-width="1" stroke-opacity="0.4" />
+    <text x="14" y="24" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#FF0033">&gt; [天道] TOOL DEV</text>
+    <line x1="14" y1="32" x2="188" y2="32" stroke="#261033" />
+
+    <!-- Go -->
+    <g transform="translate(14, 52)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">Go (Golang)</text>
+      <text x="174" text-anchor="end" fill="#FF0033" font-weight="bold">95%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="165" height="5" rx="2.5" fill="#FF0033" filter="url(#barGlow)" />
+    </g>
+
+    <!-- Python -->
+    <g transform="translate(14, 94)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">Python (OffSec)</text>
+      <text x="174" text-anchor="end" fill="#FF4D6D" font-weight="bold">92%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="160" height="5" rx="2.5" fill="#FF2A55" />
+    </g>
+
+    <!-- Bash -->
+    <g transform="translate(14, 136)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">Bash / Linux</text>
+      <text x="174" text-anchor="end" fill="#C084FC" font-weight="bold">90%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="156" height="5" rx="2.5" fill="#A855F7" />
+    </g>
+
+    <!-- JS/TS -->
+    <g transform="translate(14, 178)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">JavaScript / TS</text>
+      <text x="174" text-anchor="end" fill="#38BDF8" font-weight="bold">85%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="148" height="5" rx="2.5" fill="#38BDF8" />
+    </g>
+  </g>
+
+  <!-- COLUMN 2: Asura Path - Offensive Recon -->
+  <g transform="translate(242, 58)">
+    <rect width="202" height="225" rx="8" fill="#0d0517" stroke="#A855F7" stroke-width="1" stroke-opacity="0.4" />
+    <text x="14" y="24" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#C084FC">&gt; [修羅] RECON OSINT</text>
+    <line x1="14" y1="32" x2="188" y2="32" stroke="#261033" />
+
+    <!-- Subdomain OSINT -->
+    <g transform="translate(14, 52)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">Subdomain OSINT</text>
+      <text x="174" text-anchor="end" fill="#C084FC" font-weight="bold">96%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="167" height="5" rx="2.5" fill="#C084FC" />
+    </g>
+
+    <!-- Active Spidering -->
+    <g transform="translate(14, 94)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">Spidering Engines</text>
+      <text x="174" text-anchor="end" fill="#C084FC" font-weight="bold">92%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="160" height="5" rx="2.5" fill="#9333EA" />
+    </g>
+
+    <!-- Heuristic Classifiers -->
+    <g transform="translate(14, 136)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">Heuristics / Classifiers</text>
+      <text x="174" text-anchor="end" fill="#FF4D6D" font-weight="bold">90%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="156" height="5" rx="2.5" fill="#FF2A55" />
+    </g>
+
+    <!-- Multi-threaded DNS -->
+    <g transform="translate(14, 178)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">Wildcard DNS Filter</text>
+      <text x="174" text-anchor="end" fill="#38BDF8" font-weight="bold">94%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="163" height="5" rx="2.5" fill="#38BDF8" />
+    </g>
+  </g>
+
+  <!-- COLUMN 3: Human Path - Labs & Vuln Surface -->
+  <g transform="translate(459, 58)">
+    <rect width="202" height="225" rx="8" fill="#0d0517" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.4" />
+    <text x="14" y="24" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#38BDF8">&gt; [人間] EXPLOIT LABS</text>
+    <line x1="14" y1="32" x2="188" y2="32" stroke="#261033" />
+
+    <!-- PortSwigger -->
+    <g transform="translate(14, 52)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">PortSwigger Academy</text>
+      <text x="174" text-anchor="end" fill="#38BDF8" font-weight="bold">90%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="156" height="5" rx="2.5" fill="#38BDF8" />
+    </g>
+
+    <!-- Hack The Box -->
+    <g transform="translate(14, 94)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">Hack The Box Labs</text>
+      <text x="174" text-anchor="end" fill="#38BDF8" font-weight="bold">88%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="153" height="5" rx="2.5" fill="#0284C7" />
+    </g>
+
+    <!-- XSS / SSRF / IDOR -->
+    <g transform="translate(14, 136)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">XSS / SSRF / IDOR</text>
+      <text x="174" text-anchor="end" fill="#FF4D6D" font-weight="bold">92%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="160" height="5" rx="2.5" fill="#FF0033" />
+    </g>
+
+    <!-- Parameter Fuzzing -->
+    <g transform="translate(14, 178)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">Value-Shape Analysis</text>
+      <text x="174" text-anchor="end" fill="#C084FC" font-weight="bold">88%</text>
+      <rect y="7" width="174" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="153" height="5" rx="2.5" fill="#A855F7" />
+    </g>
+  </g>
+
+  <!-- COLUMN 4: Preta Path - Threat Intel & Triage -->
+  <g transform="translate(676, 58)">
+    <rect width="200" height="225" rx="8" fill="#0d0517" stroke="#FBBF24" stroke-width="1" stroke-opacity="0.4" />
+    <text x="14" y="24" font-family="'Fira Code', monospace" font-size="11.5" font-weight="bold" fill="#FBBF24">&gt; [餓鬼] THREAT INTEL</text>
+    <line x1="14" y1="32" x2="186" y2="32" stroke="#261033" />
+
+    <!-- CVSS / EPSS -->
+    <g transform="translate(14, 52)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">CVSS / EPSS Scoring</text>
+      <text x="172" text-anchor="end" fill="#FBBF24" font-weight="bold">94%</text>
+      <rect y="7" width="172" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="161" height="5" rx="2.5" fill="#FBBF24" />
+    </g>
+
+    <!-- CISA KEV -->
+    <g transform="translate(14, 94)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">CISA KEV Exploits</text>
+      <text x="172" text-anchor="end" fill="#FBBF24" font-weight="bold">90%</text>
+      <rect y="7" width="172" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="155" height="5" rx="2.5" fill="#D97706" />
+    </g>
+
+    <!-- Extensions Dev -->
+    <g transform="translate(14, 136)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">Sec Extensions Dev</text>
+      <text x="172" text-anchor="end" fill="#38BDF8" font-weight="bold">92%</text>
+      <rect y="7" width="172" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="158" height="5" rx="2.5" fill="#38BDF8" />
+    </g>
+
+    <!-- PoC Verification -->
+    <g transform="translate(14, 178)" font-family="'Fira Code', monospace" font-size="10.5">
+      <text fill="#CBD5E1">PoC Triage &amp; Analysis</text>
+      <text x="172" text-anchor="end" fill="#FF4D6D" font-weight="bold">88%</text>
+      <rect y="7" width="172" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="7" width="151" height="5" rx="2.5" fill="#FF0033" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="920" height="460">
+  <defs>
+    <linearGradient id="pCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0414" />
+      <stop offset="100%" stop-color="#040208" />
+    </linearGradient>
+
+    <filter id="pGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base Grid Canvas -->
+  <rect width="920" height="460" rx="14" fill="#040208" stroke="#251033" stroke-width="1.5" />
+
+  <!-- Section Header -->
+  <g transform="translate(25, 26)">
+    <!-- Akatsuki Cloud Icon -->
+    <g transform="translate(0, 4) scale(0.3)">
+      <path d="M-10,0 C-15,-6 -8,-14 0,-10 C4,-16 16,-12 16,-4 C22,-2 22,6 14,8 C10,12 -2,12 -6,6 C-12,8 -16,4 -10,0 Z" fill="#FF0033" stroke="#FFFFFF" stroke-width="1.5" />
+    </g>
+    <text x="22" y="8" font-family="'Fira Code', 'Courier New', monospace" font-size="12" font-weight="bold" fill="#FF0033" letter-spacing="1.5">
+      // WEAPONIZED SHINOBI ENGINES • TSUKI-NO-ME ARSENAL
+    </text>
+    <text x="870" text-anchor="end" y="8" font-family="'Fira Code', monospace" font-size="10" fill="#C084FC" letter-spacing="1">
+      6 PRODUCTION-GRADE WEAPONS
+    </text>
+    <line x1="0" y1="18" x2="870" y2="18" stroke="#251033" stroke-width="1" />
+  </g>
+
+  <!-- ================= ROW 1 ================= -->
+  <!-- CARD 1: Subix -->
+  <g transform="translate(25, 54)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#FF0033" stroke-width="1.2" stroke-opacity="0.5" />
+    
+    <text x="16" y="28" font-family="'Fira Code', monospace" font-size="15" font-weight="bold" fill="#FF0033">⚡ Subix</text>
+    <rect x="212" y="14" width="46" height="18" rx="4" fill="#FF0033" fill-opacity="0.2" stroke="#FF0033" stroke-width="0.8" />
+    <text x="235" y="27" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="bold" fill="#FF4D6D">Go</text>
+
+    <text x="16" y="54" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#CBD5E1">
+      <tspan x="16" dy="0">Hybrid subdomain enumeration</tspan>
+      <tspan x="16" dy="17">engine merging 68 OSINT feeds,</tspan>
+      <tspan x="16" dy="17">active multi-threaded DNS, and</tspan>
+      <tspan x="16" dy="17">dynamic wildcard filtering.</tspan>
+    </text>
+
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#150824" stroke="#2b1242" stroke-width="0.8" />
+      <text x="10" y="16" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">CORE: <tspan fill="#38BDF8">68 Feeds • Multi-DNS</tspan></text>
+      <text x="10" y="30" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">STATUS: <tspan fill="#FF0033" font-weight="bold">Armed &amp; Operational</tspan></text>
+    </g>
+  </g>
+
+  <!-- CARD 2: URLReeper -->
+  <g transform="translate(322, 54)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#8B5CF6" stroke-width="1.2" stroke-opacity="0.5" />
+    
+    <text x="16" y="28" font-family="'Fira Code', monospace" font-size="15" font-weight="bold" fill="#C084FC">🕷️ URLReeper</text>
+    <rect x="212" y="14" width="46" height="18" rx="4" fill="#8B5CF6" fill-opacity="0.2" stroke="#8B5CF6" stroke-width="0.8" />
+    <text x="235" y="27" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="bold" fill="#C084FC">Go</text>
+
+    <text x="16" y="54" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#CBD5E1">
+      <tspan x="16" dy="0">High-speed web crawling &amp; spider</tspan>
+      <tspan x="16" dy="17">framework combining passive historical</tspan>
+      <tspan x="16" dy="17">archives (Wayback, OTX, AlienVault)</tspan>
+      <tspan x="16" dy="17">with active target spidering.</tspan>
+    </text>
+
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#150824" stroke="#2b1242" stroke-width="0.8" />
+      <text x="10" y="16" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">CORE: <tspan fill="#C084FC">Passive + Active Hybrid</tspan></text>
+      <text x="10" y="30" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">STATUS: <tspan fill="#C084FC" font-weight="bold">High-Speed Spider</tspan></text>
+    </g>
+  </g>
+
+  <!-- CARD 3: Vulncat -->
+  <g transform="translate(620, 54)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.5" />
+    
+    <text x="16" y="28" font-family="'Fira Code', monospace" font-size="15" font-weight="bold" fill="#38BDF8">🎯 Vulncat</text>
+    <rect x="212" y="14" width="46" height="18" rx="4" fill="#0284C7" fill-opacity="0.2" stroke="#38BDF8" stroke-width="0.8" />
+    <text x="235" y="27" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="bold" fill="#38BDF8">Go</text>
+
+    <text x="16" y="54" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#CBD5E1">
+      <tspan x="16" dy="0">Vulnerability-surface URL classifier</tspan>
+      <tspan x="16" dy="17">for bug bounty recon. Replaces flat</tspan>
+      <tspan x="16" dy="17">regex with multi-signal heuristics,</tspan>
+      <tspan x="16" dy="17">value-shapes &amp; REST context.</tspan>
+    </text>
+
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#150824" stroke="#2b1242" stroke-width="0.8" />
+      <text x="10" y="16" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">CORE: <tspan fill="#38BDF8">Heuristic Shape Engine</tspan></text>
+      <text x="10" y="30" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">STATUS: <tspan fill="#38BDF8" font-weight="bold">Attack Surface Triaged</tspan></text>
+    </g>
+  </g>
+
+  <!-- ================= ROW 2 ================= -->
+  <!-- CARD 4: RefleX -->
+  <g transform="translate(25, 252)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#FF0033" stroke-width="1.2" stroke-opacity="0.5" />
+    
+    <text x="16" y="28" font-family="'Fira Code', monospace" font-size="15" font-weight="bold" fill="#FF4D6D">🔥 RefleX</text>
+    <rect x="194" y="14" width="64" height="18" rx="4" fill="#FF0033" fill-opacity="0.2" stroke="#FF0033" stroke-width="0.8" />
+    <text x="226" y="27" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="bold" fill="#FF4D6D">Python</text>
+
+    <text x="16" y="54" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#CBD5E1">
+      <tspan x="16" dy="0">High-performance concurrent scanner</tspan>
+      <tspan x="16" dy="17">for reflected URL parameters &amp; XSS.</tspan>
+      <tspan x="16" dy="17">Case-insensitive matching with</tspan>
+      <tspan x="16" dy="17">HTML-context severity scoring.</tspan>
+    </text>
+
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#150824" stroke="#2b1242" stroke-width="0.8" />
+      <text x="10" y="16" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">CORE: <tspan fill="#FF4D6D">Concurrent • Contextual</tspan></text>
+      <text x="10" y="30" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">STATUS: <tspan fill="#FF0033" font-weight="bold">Severity Evaluated</tspan></text>
+    </g>
+  </g>
+
+  <!-- CARD 5: CVE Hunter Pro -->
+  <g transform="translate(322, 252)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#FBBF24" stroke-width="1.2" stroke-opacity="0.5" />
+    
+    <text x="16" y="28" font-family="'Fira Code', monospace" font-size="15" font-weight="bold" fill="#FBBF24">🛡️ CVE Hunter</text>
+    <rect x="212" y="14" width="46" height="18" rx="4" fill="#D97706" fill-opacity="0.2" stroke="#FBBF24" stroke-width="0.8" />
+    <text x="235" y="27" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="bold" fill="#FBBF24">JS</text>
+
+    <text x="16" y="54" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#CBD5E1">
+      <tspan x="16" dy="0">Chrome extension for single-lookup</tspan>
+      <tspan x="16" dy="17">CVE triage: CVSS base scores, EPSS</tspan>
+      <tspan x="16" dy="17">exploit probability, CISA KEV</tspan>
+      <tspan x="16" dy="17">status &amp; instant GitHub PoC lookup.</tspan>
+    </text>
+
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#150824" stroke="#2b1242" stroke-width="0.8" />
+      <text x="10" y="16" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">CORE: <tspan fill="#FBBF24">EPSS • CVSS • CISA KEV</tspan></text>
+      <text x="10" y="30" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">STATUS: <tspan fill="#FBBF24" font-weight="bold">Extension Active</tspan></text>
+    </g>
+  </g>
+
+  <!-- CARD 6: ScriptSentry -->
+  <g transform="translate(620, 252)">
+    <rect width="275" height="185" rx="10" fill="url(#pCardBg)" stroke="#A855F7" stroke-width="1.2" stroke-opacity="0.5" />
+    
+    <text x="16" y="28" font-family="'Fira Code', monospace" font-size="15" font-weight="bold" fill="#C084FC">🔍 ScriptSentry</text>
+    <rect x="212" y="14" width="46" height="18" rx="4" fill="#8B5CF6" fill-opacity="0.2" stroke="#8B5CF6" stroke-width="0.8" />
+    <text x="235" y="27" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="bold" fill="#C084FC">JS</text>
+
+    <text x="16" y="54" font-family="'Segoe UI', system-ui, sans-serif" font-size="11.5" fill="#CBD5E1">
+      <tspan x="16" dy="0">Chrome security extension monitoring</tspan>
+      <tspan x="16" dy="17">all loaded JS scripts in real-time,</tspan>
+      <tspan x="16" dy="17">auto-categorized by risk profile with</tspan>
+      <tspan x="16" dy="17">embedded secret leak detection.</tspan>
+    </text>
+
+    <g transform="translate(16, 132)">
+      <rect width="243" height="38" rx="5" fill="#150824" stroke="#2b1242" stroke-width="0.8" />
+      <text x="10" y="16" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">CORE: <tspan fill="#C084FC">Secret Leaks • Interceptor</tspan></text>
+      <text x="10" y="30" font-family="'Fira Code', monospace" font-size="9.5" fill="#94A3B8">STATUS: <tspan fill="#C084FC" font-weight="bold">Interceptor Armed</tspan></text>
+    </g>
+  </g>
+</svg>

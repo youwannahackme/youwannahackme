@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 395" width="880" height="395">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08040d" />
+      <stop offset="100%" stop-color="#030206" />
+    </linearGradient>
+
+    <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF0033" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#8B5CF6" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#FF0033" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="termHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14061c" />
+      <stop offset="100%" stop-color="#0a0310" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    @keyframes pulseLed {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; filter: drop-shadow(0 0 6px #FF0033); }
+    }
+
+    .cursor {
+      animation: blink 1.1s infinite;
+      fill: #FF0033;
+    }
+  </style>
+
+  <!-- Outer Terminal Window -->
+  <rect x="2" y="2" width="876" height="391" rx="10" fill="url(#termBg)" stroke="url(#termBorder)" stroke-width="1.5" />
+
+  <!-- Terminal Title Bar -->
+  <path d="M 3,12 A 9 9 0 0 1 12,3 L 868,3 A 9 9 0 0 1 877,12 L 877,38 L 3,38 Z" fill="url(#termHeader)" />
+  <line x1="3" y1="38" x2="877" y2="38" stroke="#251033" stroke-width="1" />
+
+  <!-- Window Controls (Akatsuki Colors) -->
+  <g transform="translate(18, 15)">
+    <circle cx="0" cy="5" r="5" fill="#FF0033" />
+    <circle cx="16" cy="5" r="5" fill="#A855F7" />
+    <circle cx="32" cy="5" r="5" fill="#00F0FF" />
+  </g>
+
+  <!-- Session Title -->
+  <g transform="translate(100, 24)">
+    <text font-family="'Fira Code', 'Courier New', monospace" font-size="11" fill="#94A3B8" font-weight="600" letter-spacing="1">
+      <tspan fill="#FF0033">tobi@kamui-void</tspan><tspan fill="#64748B">:</tspan><tspan fill="#C084FC">~/tsuki-no-me</tspan><tspan fill="#64748B">#</tspan> <tspan fill="#F1F5F9">kamui-daemon --intangible</tspan>
+    </text>
+  </g>
+
+  <!-- Status LED in Header -->
+  <g transform="translate(775, 24)">
+    <circle cx="0" cy="0" r="3.5" fill="#FF0033" style="animation: pulseLed 2s infinite;" />
+    <text x="10" y="3.5" font-family="'Fira Code', monospace" font-size="9" fill="#FF4D6D" font-weight="700" letter-spacing="1">PHASE: INTANGIBLE</text>
+  </g>
+
+  <!-- Code / Execution Diagnostics -->
+  <g transform="translate(28, 64)" font-family="'Fira Code', 'Courier New', Consolas, monospace" font-size="12.5">
+    <!-- Class Declaration -->
+    <text y="0" xml:space="preserve"><tspan fill="#FF4D6D" font-weight="bold">class </tspan><tspan fill="#D8B4FE" font-weight="bold">ObitoOffensiveProtocol</tspan><tspan fill="#CBD5E1">:</tspan></text>
+
+    <!-- Constructor -->
+    <text y="21" x="18" xml:space="preserve"><tspan fill="#FF4D6D" font-weight="bold">def </tspan><tspan fill="#A855F7">__init__</tspan><tspan fill="#CBD5E1">(self):</tspan></text>
+
+    <!-- Properties -->
+    <text y="42" x="36" xml:space="preserve"><tspan fill="#FDA4AF">self.identity</tspan>     <tspan fill="#CBD5E1">= </tspan><tspan fill="#E0E7FF">"whoami_404 // Shoaib Arshad"</tspan></text>
+
+    <text y="63" x="36" xml:space="preserve"><tspan fill="#FDA4AF">self.ocular_jutsu</tspan> <tspan fill="#CBD5E1">= [</tspan><tspan fill="#FF0033">"Mangekyō Sharingan (Kamui)"</tspan><tspan fill="#CBD5E1">, </tspan><tspan fill="#C084FC">"Rinnegan (Six Paths OSINT)"</tspan><tspan fill="#CBD5E1">]</tspan></text>
+
+    <text y="84" x="36" xml:space="preserve"><tspan fill="#FDA4AF">self.arsenal</tspan>      <tspan fill="#CBD5E1">= [</tspan><tspan fill="#38BDF8">"Subix (Go)"</tspan><tspan fill="#CBD5E1">, </tspan><tspan fill="#38BDF8">"URLReeper (Go)"</tspan><tspan fill="#CBD5E1">, </tspan><tspan fill="#38BDF8">"Vulncat (Go)"</tspan><tspan fill="#CBD5E1">, </tspan><tspan fill="#F59E0B">"RefleX (Python)"</tspan><tspan fill="#CBD5E1">]</tspan></text>
+
+    <text y="105" x="36" xml:space="preserve"><tspan fill="#FDA4AF">self.training</tspan>     <tspan fill="#CBD5E1">= [</tspan><tspan fill="#E0E7FF">"PortSwigger Web Security Academy"</tspan><tspan fill="#CBD5E1">, </tspan><tspan fill="#E0E7FF">"Hack The Box"</tspan><tspan fill="#CBD5E1">]</tspan></text>
+
+    <text y="126" x="36" xml:space="preserve"><tspan fill="#FDA4AF">self.kamui_mode</tspan>   <tspan fill="#CBD5E1">= </tspan><tspan fill="#38BDF8">True</tspan>  <tspan fill="#6B7280" font-style="italic"># Phasing through firewalls &amp; perimeter defenses</tspan></text>
+
+    <!-- Philosophy -->
+    <text y="152" x="18" xml:space="preserve"><tspan fill="#FF4D6D" font-weight="bold">def </tspan><tspan fill="#A855F7">ninja_way</tspan><tspan fill="#CBD5E1">(self):</tspan></text>
+
+    <text y="173" x="36" xml:space="preserve"><tspan fill="#FF4D6D" font-weight="bold">return </tspan><tspan fill="#E0E7FF">"recon first. exploit second. infinite tsukuyomi always."</tspan></text>
+
+    <!-- Clean Inner Separator -->
+    <line x1="0" y1="196" x2="820" y2="196" stroke="#251033" stroke-dasharray="4 4" />
+
+    <!-- Live Execution Diagnostic Feeds -->
+    <text y="220" x="0" xml:space="preserve"><tspan fill="#FF0033" font-weight="bold">[+] KAMUI ACTIVE: </tspan><tspan fill="#38BDF8">dimensional_rift.phase()</tspan> <tspan fill="#6B7280" font-style="italic"># Surface discovery intangibility ON</tspan></text>
+
+    <text y="242" x="0" xml:space="preserve"><tspan fill="#FF4D6D" font-weight="bold">&gt;&gt;&gt; Subix Engine: </tspan><tspan fill="#CBD5E1">68 OSINT feeds active • Dynamic wildcard filtering ARMED</tspan></text>
+
+    <text y="264" x="0" xml:space="preserve"><tspan fill="#C084FC" font-weight="bold">&gt;&gt;&gt; URLReeper &amp; Vulncat: </tspan><tspan fill="#CBD5E1">Active/Passive spidering + Value-shape heuristics ONLINE</tspan></text>
+
+    <!-- Interactive Prompt with Non-colliding Cursor -->
+    <g transform="translate(0, 292)">
+      <text y="14" x="0" xml:space="preserve"><tspan fill="#FF0033" font-weight="bold">youwannahackme@kamui</tspan><tspan fill="#CBD5E1">:</tspan><tspan fill="#C084FC">~/arsenal</tspan><tspan fill="#CBD5E1">$ </tspan><tspan fill="#F1F5F9">./launch_infinite_tsukuyomi</tspan></text>
+      <!-- Cursor positioned exactly after "./launch_infinite_tsukuyomi" with 8px margin -->
+      <rect x="424" y="2" width="8" height="14" class="cursor" />
+    </g>
+  </g>
+</svg>
