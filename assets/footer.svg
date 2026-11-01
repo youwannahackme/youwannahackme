@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 120" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 120" width="950" height="120">
   <defs>
     <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FF9C" />
-      <stop offset="50%" stop-color="#00F0FF" />
-      <stop offset="100%" stop-color="#7000FF" />
+      <stop offset="0%" stop-color="#FF0033" />
+      <stop offset="50%" stop-color="#C084FC" />
+      <stop offset="100%" stop-color="#8B5CF6" />
     </linearGradient>
 
     <filter id="fGlow">
@@ -29,33 +29,34 @@
   </style>
 
   <!-- Ambient Grid Lines -->
-  <g stroke="#1a2b4c" stroke-width="0.7" opacity="0.3">
+  <g stroke="#261033" stroke-width="0.7" opacity="0.35">
     <line x1="0" y1="20" x2="950" y2="20" />
     <line x1="0" y1="40" x2="950" y2="40" />
     <line x1="0" y1="60" x2="950" y2="60" />
   </g>
 
-  <!-- Animated Cyber Waves -->
-  <path fill="#0d1f3c" fill-opacity="0.4" stroke="url(#waveGrad)" stroke-width="1.2" style="animation: waveMotion 9s infinite ease-in-out;" />
-  <path fill="#050a14" fill-opacity="0.9" stroke="#00FF9C" stroke-width="0.8" stroke-opacity="0.5" style="animation: waveMotion2 7s infinite ease-in-out;" />
+  <!-- Animated Kamui Void Waves -->
+  <path d="M 0,50 Q 237.5,35 475,50 T 950,50 L 950,120 L 0,120 Z" fill="#150624" fill-opacity="0.45" stroke="url(#waveGrad)" stroke-width="1.2" style="animation: waveMotion 9s infinite ease-in-out;" />
+  <path d="M 0,65 Q 237.5,75 475,65 T 950,65 L 950,120 L 0,120 Z" fill="#06020c" fill-opacity="0.9" stroke="#FF0033" stroke-width="0.9" stroke-opacity="0.5" style="animation: waveMotion2 7s infinite ease-in-out;" />
 
-  <!-- Center Sign-Off HUD Capsule (Engineered with ample margin to prevent text collision) -->
-  <g transform="translate(475, 78)" text-anchor="middle">
-    <!-- Outer Pill Container: 660px width for spacious typography -->
-    <rect x="-330" y="-17" width="660" height="34" rx="17" fill="#070d1a" stroke="#00F0FF" stroke-width="1.2" filter="url(#fGlow)" />
+  <!-- Center Sign-Off HUD Capsule -->
+  <g transform="translate(475, 78)">
+    <!-- Outer Pill Container: 700px width centered at 0 -->
+    <rect x="-350" y="-17" width="700" height="34" rx="17" fill="#0c0417" stroke="#A855F7" stroke-width="1.2" filter="url(#fGlow)" />
     
-    <!-- Left Indicator Beacon -->
-    <circle cx="-302" cy="0" r="3.5" fill="#00FF9C">
+    <!-- Left Indicator Beacon (Sharingan Red) -->
+    <circle cx="-322" cy="0" r="3.5" fill="#FF0033">
       <animate attributeName="opacity" values="0.3;1;0.3" dur="1.6s" repeatCount="indefinite" />
     </circle>
     
-    <!-- Main Footer Mission Text -->
-    <text y="4" font-family="'Fira Code', 'Courier New', monospace" font-size="11" font-weight="600" fill="#CBD5E1" letter-spacing="1.2">
-      <tspan fill="#00FF9C">MISSION:</tspan> SECURE // RECON FIRST • EXPLOIT SECOND • REPORT ALWAYS
-    </text>
+    <!-- Main Footer Mission Text Split for Zero Overlap -->
+    <g font-family="'Fira Code', 'Courier New', monospace" font-size="10.5" font-weight="bold" letter-spacing="1.2">
+      <text x="-215" y="4" text-anchor="end" fill="#FF0033">NINJA WAY:</text>
+      <text x="-205" y="4" text-anchor="start" fill="#CBD5E1">RECON FIRST • EXPLOIT SECOND • INFINITE TSUKUYOMI ALWAYS</text>
+    </g>
 
-    <!-- Right Indicator Beacon -->
-    <circle cx="302" cy="0" r="3.5" fill="#7000FF">
+    <!-- Right Indicator Beacon (Rinnegan Purple) -->
+    <circle cx="322" cy="0" r="3.5" fill="#A855F7">
       <animate attributeName="opacity" values="0.3;1;0.3" dur="1.6s" repeatCount="indefinite" begin="0.8s" />
     </circle>
   </g>

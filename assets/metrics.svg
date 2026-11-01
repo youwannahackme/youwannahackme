@@ -1,28 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 185" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 185" width="900" height="185">
   <defs>
     <linearGradient id="mCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080e1b" />
-      <stop offset="100%" stop-color="#03060c" />
-    </linearGradient>
-
-    <linearGradient id="goBar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00ADD8" />
-      <stop offset="100%" stop-color="#00FF9C" />
-    </linearGradient>
-
-    <linearGradient id="pyBar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#3776AB" />
-      <stop offset="100%" stop-color="#FFD43B" />
-    </linearGradient>
-
-    <linearGradient id="jsBar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F7DF1E" />
-      <stop offset="100%" stop-color="#F59E0B" />
-    </linearGradient>
-
-    <linearGradient id="shBar" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#89E051" />
-      <stop offset="100%" stop-color="#00F0FF" />
+      <stop offset="0%" stop-color="#0a0413" />
+      <stop offset="100%" stop-color="#040208" />
     </linearGradient>
 
     <filter id="mGlow">
@@ -34,106 +14,93 @@
     </filter>
   </defs>
 
-  <style>
-    @keyframes barPulse {
-      0%, 100% { opacity: 0.9; }
-      50% { opacity: 1; filter: drop-shadow(0 0 6px rgba(0,255,156,0.6)); }
-    }
-    .m-title {
-      font-family: 'Fira Code', monospace;
-      font-weight: 700;
-      font-size: 12px;
-      letter-spacing: 1.5px;
-    }
-    .m-stat-label {
-      font-family: 'Fira Code', monospace;
-      font-size: 11px;
-      fill: #94A3B8;
-    }
-    .m-stat-val {
-      font-family: 'Fira Code', monospace;
-      font-weight: 700;
-      font-size: 11px;
-    }
-  </style>
-
   <!-- Container Box -->
-  <rect width="900" height="185" rx="12" fill="url(#mCardBg)" stroke="#16233b" stroke-width="1.5" />
+  <rect width="900" height="185" rx="12" fill="url(#mCardBg)" stroke="#251033" stroke-width="1.5" />
 
-  <!-- LEFT COLUMN: Profile Telemetry -->
+  <!-- LEFT COLUMN: Shinobi Telemetry -->
   <g transform="translate(25, 20)">
-    <!-- Header -->
-    <text class="m-title" fill="#00FF9C">&gt; REPOSITORY METRICS &amp; ACTIVITY</text>
-    <line x1="0" y1="12" x2="400" y2="12" stroke="#16233b" stroke-width="1" />
+    <!-- Header with Uchiha Fan Crest Micro -->
+    <g transform="translate(0, 4) scale(0.35)">
+      <!-- Uchiha Fan: Top red, bottom white, white handle -->
+      <path d="M 0,0 A 10 10 0 0 1 20,0 A 10 10 0 0 0 0,0 Z" fill="#FF0033" />
+      <path d="M 0,0 A 10 10 0 0 0 20,0 A 10 10 0 0 1 0,0 Z" fill="#FFFFFF" />
+      <rect x="8.5" y="0" width="3" height="8" fill="#FFFFFF" />
+    </g>
+    <text x="18" y="10" font-family="'Fira Code', 'Courier New', monospace" font-size="12" font-weight="bold" fill="#FF0033" letter-spacing="1.5">
+      &gt; SHINOBI TELEMETRY &amp; OPERATIONAL VELOCITY
+    </text>
+    <line x1="0" y1="18" x2="400" y2="18" stroke="#261033" stroke-width="1" />
 
     <!-- Metric 1: Offensive Engines -->
-    <g transform="translate(0, 34)">
-      <circle cx="6" cy="6" r="3" fill="#00FF9C" />
-      <text x="18" y="10" class="m-stat-label">Offensive Tooling Engines</text>
-      <text x="390" text-anchor="end" y="10" class="m-stat-val" fill="#00FF9C">6 Published</text>
+    <g transform="translate(0, 42)">
+      <circle cx="6" cy="6" r="3" fill="#FF0033" />
+      <text x="18" y="10" font-family="'Fira Code', monospace" font-size="11" fill="#CBD5E1">Weaponized Tooling Engines</text>
+      <text x="390" text-anchor="end" y="10" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#FF0033">6 Published</text>
     </g>
 
-    <!-- Metric 2: Primary Focus -->
-    <g transform="translate(0, 62)">
-      <circle cx="6" cy="6" r="3" fill="#00F0FF" />
-      <text x="18" y="10" class="m-stat-label">Security Focus</text>
-      <text x="390" text-anchor="end" y="10" class="m-stat-val" fill="#00F0FF">Recon &amp; Bug Bounty</text>
-    </g>
-
-    <!-- Metric 3: Target Platforms -->
-    <g transform="translate(0, 90)">
+    <!-- Metric 2: Security Focus -->
+    <g transform="translate(0, 72)">
       <circle cx="6" cy="6" r="3" fill="#A855F7" />
-      <text x="18" y="10" class="m-stat-label">Training Labs</text>
-      <text x="390" text-anchor="end" y="10" class="m-stat-val" fill="#D8B4FE">PortSwigger + HTB</text>
+      <text x="18" y="10" font-family="'Fira Code', monospace" font-size="11" fill="#CBD5E1">Security Specialization</text>
+      <text x="390" text-anchor="end" y="10" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#C084FC">Recon &amp; Bug Bounty</text>
     </g>
 
-    <!-- Metric 4: Career Objective -->
-    <g transform="translate(0, 118)">
-      <circle cx="6" cy="6" r="3" fill="#FF0055" />
-      <text x="18" y="10" class="m-stat-label">Target Role</text>
-      <text x="390" text-anchor="end" y="10" class="m-stat-val" fill="#FF77A9">Penetration Testing</text>
+    <!-- Metric 3: Training Labs -->
+    <g transform="translate(0, 102)">
+      <circle cx="6" cy="6" r="3" fill="#38BDF8" />
+      <text x="18" y="10" font-family="'Fira Code', monospace" font-size="11" fill="#CBD5E1">Training Laboratories</text>
+      <text x="390" text-anchor="end" y="10" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#38BDF8">PortSwigger + HTB</text>
+    </g>
+
+    <!-- Metric 4: Target Role -->
+    <g transform="translate(0, 132)">
+      <circle cx="6" cy="6" r="3" fill="#FF4D6D" />
+      <text x="18" y="10" font-family="'Fira Code', monospace" font-size="11" fill="#CBD5E1">Target Career Role</text>
+      <text x="390" text-anchor="end" y="10" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#FF4D6D">Penetration Testing</text>
     </g>
   </g>
 
   <!-- Vertical Divider -->
-  <line x1="450" y1="20" x2="450" y2="165" stroke="#16233b" stroke-width="1" />
+  <line x1="450" y1="20" x2="450" y2="165" stroke="#261033" stroke-width="1" />
 
-  <!-- RIGHT COLUMN: Language & Weapon Stack Breakdown -->
+  <!-- RIGHT COLUMN: Chakra Allocation (Languages) -->
   <g transform="translate(475, 20)">
     <!-- Header -->
-    <text class="m-title" fill="#00F0FF">&gt; CODEBASE LANGUAGE BREAKDOWN</text>
-    <line x1="0" y1="12" x2="400" y2="12" stroke="#16233b" stroke-width="1" />
+    <text y="10" font-family="'Fira Code', monospace" font-size="12" font-weight="bold" fill="#C084FC" letter-spacing="1.5">
+      &gt; CHAKRA ALLOCATION // WEAPONIZED CODEBASE
+    </text>
+    <line x1="0" y1="18" x2="400" y2="18" stroke="#261033" stroke-width="1" />
 
     <!-- Language 1: Go -->
-    <g transform="translate(0, 34)">
-      <text class="m-stat-label" fill="#E2E8F0">Go (Golang)</text>
-      <text x="400" text-anchor="end" class="m-stat-val" fill="#00FF9C">65%</text>
-      <rect y="10" width="400" height="6" rx="3" fill="#141e30" />
-      <rect y="10" width="260" height="6" rx="3" fill="url(#goBar)" style="animation: barPulse 3s infinite;" />
+    <g transform="translate(0, 42)">
+      <text y="10" font-family="'Fira Code', monospace" font-size="11" fill="#CBD5E1">Go (Engines &amp; Concurrency)</text>
+      <text x="400" text-anchor="end" y="10" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#00ADD8">58.4%</text>
+      <rect y="16" width="400" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="16" width="234" height="5" rx="2.5" fill="#00ADD8" />
     </g>
 
     <!-- Language 2: Python -->
-    <g transform="translate(0, 68)">
-      <text class="m-stat-label" fill="#E2E8F0">Python</text>
-      <text x="400" text-anchor="end" class="m-stat-val" fill="#FFD43B">20%</text>
-      <rect y="10" width="400" height="6" rx="3" fill="#141e30" />
-      <rect y="10" width="80" height="6" rx="3" fill="url(#pyBar)" />
+    <g transform="translate(0, 72)">
+      <text y="10" font-family="'Fira Code', monospace" font-size="11" fill="#CBD5E1">Python (Exploit Scripting)</text>
+      <text x="400" text-anchor="end" y="10" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#FFD43B">26.1%</text>
+      <rect y="16" width="400" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="16" width="104" height="5" rx="2.5" fill="#FFD43B" />
     </g>
 
-    <!-- Language 3: JavaScript / TypeScript -->
+    <!-- Language 3: JavaScript -->
     <g transform="translate(0, 102)">
-      <text class="m-stat-label" fill="#E2E8F0">JavaScript / TS</text>
-      <text x="400" text-anchor="end" class="m-stat-val" fill="#F59E0B">10%</text>
-      <rect y="10" width="400" height="6" rx="3" fill="#141e30" />
-      <rect y="10" width="40" height="6" rx="3" fill="url(#jsBar)" />
+      <text y="10" font-family="'Fira Code', monospace" font-size="11" fill="#CBD5E1">JavaScript (Chrome Extensions)</text>
+      <text x="400" text-anchor="end" y="10" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#F7DF1E">10.8%</text>
+      <rect y="16" width="400" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="16" width="43" height="5" rx="2.5" fill="#F7DF1E" />
     </g>
 
-    <!-- Language 4: Shell / Bash -->
-    <g transform="translate(0, 136)">
-      <text class="m-stat-label" fill="#E2E8F0">Bash / Shell Scripting</text>
-      <text x="400" text-anchor="end" class="m-stat-val" fill="#38BDF8">5%</text>
-      <rect y="10" width="400" height="6" rx="3" fill="#141e30" />
-      <rect y="10" width="20" height="6" rx="3" fill="url(#shBar)" />
+    <!-- Language 4: Shell -->
+    <g transform="translate(0, 132)">
+      <text y="10" font-family="'Fira Code', monospace" font-size="11" fill="#CBD5E1">Shell / Bash (Automations)</text>
+      <text x="400" text-anchor="end" y="10" font-family="'Fira Code', monospace" font-size="11" font-weight="bold" fill="#38BDF8">4.7%</text>
+      <rect y="16" width="400" height="5" rx="2.5" fill="#200d2b" />
+      <rect y="16" width="19" height="5" rx="2.5" fill="#38BDF8" />
     </g>
   </g>
 </svg>
